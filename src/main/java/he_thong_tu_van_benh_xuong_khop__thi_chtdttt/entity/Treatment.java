@@ -20,4 +20,8 @@ public class Treatment {
 
     @Column(name = "Method")
     private String method;
+
+    public Treatment(String method) {
+        this.method = method;
+    }
 }

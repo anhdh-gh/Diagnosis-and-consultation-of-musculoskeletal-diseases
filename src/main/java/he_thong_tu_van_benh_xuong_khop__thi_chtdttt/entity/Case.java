@@ -20,6 +20,10 @@ public class Case {
     private int ID;
 
     @OneToMany(targetEntity = Attribute.class, cascade = CascadeType.ALL)
-    @JoinColumn(name = "CaseID")
+    @JoinColumn(name = "CaseID", nullable = false)
     private List<Attribute> attributes;
+
+    public Case(List<Attribute> attributes) {
+        this.attributes = attributes;
+    }
 }

@@ -12,12 +12,26 @@ import java.util.List;
 @Data
 @Entity
 @Table(name = "attribute")
-public class Attribute extends Symptom {
+public class Attribute {
+
+    @Id
+    @Column(name = "ID")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int ID;
+
+    @Column(name = "Name")
+    private String name;
 
     @Column(name = "Weight")
     private double weight;
 
     @OneToMany(targetEntity = AttributeValue.class, cascade = CascadeType.ALL)
-    @JoinColumn(name = "AttributeID")
+    @JoinColumn(name = "AttributeID", nullable = false)
     private List<AttributeValue> attributeValues;
+
+    public Attribute(String name, double weight, List<AttributeValue> attributeValues) {
+        this.name = name;
+        this.weight = weight;
+        this.attributeValues = attributeValues;
+    }
 }

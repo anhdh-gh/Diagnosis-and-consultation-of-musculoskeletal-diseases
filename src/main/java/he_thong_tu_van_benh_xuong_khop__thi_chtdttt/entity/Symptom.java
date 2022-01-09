@@ -7,7 +7,6 @@ import lombok.NoArgsConstructor;
 import javax.persistence.*;
 import java.util.List;
 
-@Inheritance(strategy = InheritanceType.JOINED)
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
@@ -18,12 +17,17 @@ public class Symptom {
     @Id
     @Column(name = "ID")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    protected int ID;
+    private int ID;
 
     @Column(name = "Name")
-    protected String name;
+    private String name;
 
-    @OneToMany(targetEntity = Value.class, cascade = CascadeType.ALL)
-    @JoinColumn(name = "SymptomID")
-    private List<Value> values;
+    @OneToMany(targetEntity = SymptomValue.class, cascade = CascadeType.ALL)
+    @JoinColumn(name = "SymptomID", nullable = false)
+    private List<SymptomValue> symptomValues;
+
+    public Symptom(String name, List<SymptomValue> symptomValues) {
+        this.name = name;
+        this.symptomValues = symptomValues;
+    }
 }

@@ -23,10 +23,11 @@ public class Degree {
     private String name;
 
     @OneToMany(targetEntity = Symptom.class, cascade = CascadeType.ALL)
-    @JoinColumn(name = "DegreeID")
+    @JoinColumn(name = "DegreeID", nullable = false)
     private List<Symptom> symptoms;
 
-    @OneToOne(targetEntity = Treatment.class, cascade = CascadeType.ALL)
-    @JoinColumn(name = "TreatmentID")
-    private Treatment treatment;
+    public Degree(String name, List<Symptom> symptoms) {
+        this.name = name;
+        this.symptoms = symptoms;
+    }
 }

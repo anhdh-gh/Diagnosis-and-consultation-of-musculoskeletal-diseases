@@ -6,19 +6,22 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 
-@Inheritance(strategy = InheritanceType.JOINED)
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
 @Entity
-@Table(name = "value")
-public class Value {
+@Table(name = "symptomvalue")
+public class SymptomValue {
 
     @Id
     @Column(name = "ID")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    protected int ID;
+    private int ID;
 
     @Column(name = "Value")
-    protected String value;
+    private String value;
+
+    public SymptomValue(String value) {
+        this.value = value;
+    }
 }

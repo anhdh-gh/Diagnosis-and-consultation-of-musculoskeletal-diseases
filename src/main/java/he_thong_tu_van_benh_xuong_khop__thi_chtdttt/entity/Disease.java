@@ -22,15 +22,22 @@ public class Disease {
     @Column(name = "Name")
     private String name;
 
+    @OneToOne(targetEntity = Case.class, cascade = CascadeType.ALL)
+    @JoinColumn(name = "CaseID")
+    private Case cases;
+
     @OneToOne(targetEntity = Treatment.class, cascade = CascadeType.ALL)
     @JoinColumn(name = "TreatmentID")
     private Treatment treatment;
 
-    @OneToMany(targetEntity = Degree.class)
-    @JoinColumn(name = "DiseaseID")
+    @OneToMany(targetEntity = Degree.class, cascade = CascadeType.ALL)
+    @JoinColumn(name = "DiseaseID", nullable = false)
     private List<Degree> degrees;
 
-    @OneToMany(targetEntity = Case.class)
-    @JoinColumn(name = "DiseaseID")
-    private List<Case> cases;
+    public Disease(String name, Treatment treatment, List<Degree> degrees, Case cases) {
+        this.name = name;
+        this.treatment = treatment;
+        this.degrees = degrees;
+        this.cases = cases;
+    }
 }
