@@ -22,15 +22,15 @@ public class Disease {
     @Column(name = "Name")
     private String name;
 
-    @OneToOne(targetEntity = Treatment.class, cascade = {CascadeType.PERSIST, CascadeType.MERGE})
+    @OneToOne(targetEntity = Treatment.class, cascade = CascadeType.ALL)
     @JoinColumn(name = "TreatmentID")
     private Treatment treatment;
 
-    @OneToMany(targetEntity = Degree.class, cascade = {CascadeType.PERSIST, CascadeType.MERGE})
+    @OneToMany(targetEntity = Degree.class)
     @JoinColumn(name = "DiseaseID")
     private List<Degree> degrees;
 
-    @OneToMany(targetEntity = Case.class, cascade = {CascadeType.PERSIST, CascadeType.MERGE})
+    @OneToMany(targetEntity = Case.class)
     @JoinColumn(name = "DiseaseID")
     private List<Case> cases;
 }

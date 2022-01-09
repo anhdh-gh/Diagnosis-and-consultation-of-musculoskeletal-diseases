@@ -17,7 +17,7 @@ public class Attribute extends Symptom {
     @Column(name = "Weight")
     private double weight;
 
-    @OneToMany(targetEntity = AttributeValue.class, cascade = {CascadeType.PERSIST, CascadeType.MERGE})
+    @OneToMany(targetEntity = AttributeValue.class, cascade = CascadeType.ALL)
     @JoinColumn(name = "AttributeID")
     private List<AttributeValue> attributeValues;
 }

@@ -23,7 +23,7 @@ public class Symptom {
     @Column(name = "Name")
     protected String name;
 
-    @OneToMany(targetEntity = Value.class, cascade = {CascadeType.PERSIST, CascadeType.MERGE})
+    @OneToMany(targetEntity = Value.class, cascade = CascadeType.ALL)
     @JoinColumn(name = "SymptomID")
     private List<Value> values;
 }
