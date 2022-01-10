@@ -24,7 +24,7 @@ public class Disease {
 
     @OneToOne(targetEntity = Case.class, cascade = CascadeType.ALL)
     @JoinColumn(name = "CaseID")
-    private Case cases;
+    private Case _case;
 
     @OneToOne(targetEntity = Treatment.class, cascade = CascadeType.ALL)
     @JoinColumn(name = "TreatmentID")
@@ -34,10 +34,10 @@ public class Disease {
     @JoinColumn(name = "DiseaseID", nullable = false)
     private List<Degree> degrees;
 
-    public Disease(String name, Treatment treatment, List<Degree> degrees, Case cases) {
+    public Disease(String name, Treatment treatment, List<Degree> degrees, Case _case) {
         this.name = name;
         this.treatment = treatment;
         this.degrees = degrees;
-        this.cases = cases;
+        this._case = _case;
     }
 }
