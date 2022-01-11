@@ -100,7 +100,11 @@
                                                         </c:if>
                                                     </div>
                                                 </td>
-                                                <td>${disease.treatment.method}</td>
+                                                <td>
+                                                    <a href="${disease.treatment.method}" target="_blank">
+                                                        Phương pháp điều trị
+                                                    </a>
+                                                </td>
                                                 <td class="text-right">
                                                     <a href="/manager/disease/read/${disease.ID}" class="btn btn-primary btn-sm mb-1">
                                                         <i class="far fa-edit"></i>

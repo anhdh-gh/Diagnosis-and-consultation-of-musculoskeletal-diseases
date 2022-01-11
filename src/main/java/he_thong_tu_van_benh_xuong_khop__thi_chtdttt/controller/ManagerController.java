@@ -33,6 +33,12 @@ public class ManagerController {
         return "manager/cr-disease";
     }
 
+    @GetMapping("/attributes")
+    public String showAddAttributes(Model model) {
+        model.addAttribute("attributeDTOs", diseaseService.getAllAttributeDTO());
+        return "manager/attribute-list";
+    }
+
     @GetMapping("/disease/read/{id}")
     public String showEditDisease(Model model, @PathVariable int id) throws JsonProcessingException {
         Disease disease = diseaseService.findByID(id);

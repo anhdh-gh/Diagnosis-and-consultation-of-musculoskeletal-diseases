@@ -17,6 +17,13 @@
                         <span>Diseases</span>
                     </a>
                 </li>
+
+                <li id="sidebar-attribute">
+                    <a href="/manager/attributes">
+                        <img src="/img/manager/icon-computer.png" alt="icon">
+                        <span>Attributes</span>
+                    </a>
+                </li>
             </ul>
         </div>
     </div>
