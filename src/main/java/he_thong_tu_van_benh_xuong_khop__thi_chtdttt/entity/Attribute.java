@@ -34,4 +34,9 @@ public class Attribute {
         this.weight = weight;
         this.attributeValues = attributeValues;
     }
+
+    public Attribute(String name, List<AttributeValue> attributeValues) {
+        this.name = name;
+        this.attributeValues = attributeValues;
+    }
 }

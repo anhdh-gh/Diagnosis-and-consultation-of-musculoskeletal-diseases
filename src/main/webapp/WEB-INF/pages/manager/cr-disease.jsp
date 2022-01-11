@@ -151,7 +151,7 @@
             arrQuantitySymptom = arrQuantitySymptom.split(",");
             arrValue = arrValue.split(",");
 
-            if(arrQuantitySymptom.length != quantityDegree || arrQuantitySymptom.length != arrValue.length || arrQuantitySymptom.some((item, index) => item != arrValue[index])) return;
+            if(arrQuantitySymptom.length != quantityDegree || arrQuantitySymptom.length != arrValue.length) return;
 
             for(let i = 1; i <= quantityDegree; i++) {
                 const degree = {

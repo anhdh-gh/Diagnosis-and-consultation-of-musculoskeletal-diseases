@@ -50,7 +50,7 @@ public class DiseaseService {
         double quantity = 0;
 
         for(Attribute attribute: attributes) {
-            if(attribute.getName().equals(nameAttribute)) {
+            if(attribute.getName().trim().equalsIgnoreCase(nameAttribute.trim())) {
                 sum +=  attribute.getWeight();
                 quantity++;
             }
@@ -86,14 +86,14 @@ public class DiseaseService {
 
             AttributeDTO attributeDTO = null;
             for(AttributeDTO attributeDTOi: attributeDTOs)
-                if(attributeDTOi.getName().equals(attribute.getName()))
+                if(attributeDTOi.getName().trim().equalsIgnoreCase(attribute.getName().trim()))
                     attributeDTO = attributeDTOi;
 
             if(attributeDTO != null) {
                 attributeDTO.setQuantityDisease(attributeDTO.getQuantityDisease() + 1);
 
                 for(String value: attribute.getAttributeValues().stream().map(attributeValue -> attributeValue.getValue()).collect(Collectors.toList())) {
-                    if(attributeDTO.getValues().stream().allMatch(valuei -> !valuei.equals(value)))
+                    if(attributeDTO.getValues().stream().allMatch(valuei -> !valuei.trim().equalsIgnoreCase(value.trim())))
                         attributeDTO.getValues().add(value);
                 }
             }
@@ -106,6 +106,8 @@ public class DiseaseService {
                 attributeDTOs.add(attributeDTO);
             }
         });
+
+        attributeDTOs.forEach(attributeDTO -> attributeDTO.getValues().sort((o1, o2) -> o1.length() - o2.length()));
 
         return attributeDTOs;
     }

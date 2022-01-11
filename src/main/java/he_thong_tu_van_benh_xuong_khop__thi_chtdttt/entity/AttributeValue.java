@@ -28,4 +28,8 @@ public class AttributeValue {
         this.value = value;
         this.comparativeValue = comparativeValue;
     }
+
+    public AttributeValue(String value) {
+        this.value = value;
+    }
 }

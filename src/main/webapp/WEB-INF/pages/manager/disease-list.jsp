@@ -44,6 +44,8 @@
                                             <th>Name</th>
                                             <th>CaseID</th>
                                             <th>Attribute case</th>
+                                            <th>Quantity attribute</th>
+                                            <th>Sum attribute</th>
                                             <th>Degree</th>
                                             <th>Treatment</th>
                                             <th class="text-right">Action</th>
@@ -70,13 +72,19 @@
                                                                   data-toggle="dropdown" aria-expanded="false">${disease._case.attributes[0].name} - ${disease._case.attributes[0].weight}
                                                             </span>
                                                             <div class="dropdown-menu">
+                                                                <c:set var="total" value="${0}"/>
                                                                 <c:forEach var="attribute" items="${disease._case.attributes}">
+                                                                    <c:set var="total" value="${total + attribute.weight}" />
                                                                     <span style="cursor: pointer" class="dropdown-item">${attribute.name} - ${attribute.weight}</span>
                                                                 </c:forEach>
                                                             </div>
                                                         </c:if>
                                                     </div>
                                                 </td>
+
+                                                <td>${disease._case.attributes.size()}</td>
+
+                                                <td>${total}</td>
 
                                                 <td>
                                                     <div class="dropdown">
@@ -105,6 +113,7 @@
                                                         Phương pháp điều trị
                                                     </a>
                                                 </td>
+
                                                 <td class="text-right">
                                                     <a href="/manager/disease/read/${disease.ID}" class="btn btn-primary btn-sm mb-1">
                                                         <i class="far fa-edit"></i>
