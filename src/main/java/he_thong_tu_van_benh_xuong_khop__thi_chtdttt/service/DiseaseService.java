@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 import java.util.concurrent.atomic.AtomicReference;
@@ -59,6 +60,12 @@ public class DiseaseService {
         return sum/quantity;
     }
 
+    private Disease getDiseaseByAttributeID(int attributeID) {
+        List<Disease> diseases = diseaseRepository.findAll();
+
+        return diseases.stream().filter(disease -> disease.get_case().getAttributes().stream().anyMatch(attribute -> attributeID == attribute.getID())).findFirst().get();
+    }
+
     private List<Attribute> getAllAttributes() {
         List<Disease> diseases = diseaseRepository.findAll();
         if(diseases == null) diseases = new ArrayList<>();
@@ -90,7 +97,7 @@ public class DiseaseService {
                     attributeDTO = attributeDTOi;
 
             if(attributeDTO != null) {
-                attributeDTO.setQuantityDisease(attributeDTO.getQuantityDisease() + 1);
+                attributeDTO.getDiseases().add(getDiseaseByAttributeID(attribute.getID()));
 
                 for(String value: attribute.getAttributeValues().stream().map(attributeValue -> attributeValue.getValue()).collect(Collectors.toList())) {
                     if(attributeDTO.getValues().stream().allMatch(valuei -> !valuei.trim().equalsIgnoreCase(value.trim())))
@@ -101,7 +108,7 @@ public class DiseaseService {
                 attributeDTO = new AttributeDTO();
                 attributeDTO.setName(attribute.getName());
                 attributeDTO.setValues(attribute.getAttributeValues().stream().map(attributeValue -> attributeValue.getValue()).collect(Collectors.toList()));
-                attributeDTO.setQuantityDisease(1);
+                attributeDTO.setDiseases(new ArrayList<>(Arrays.asList(getDiseaseByAttributeID(attribute.getID()))));
                 attributeDTO.setWeight(calculateWeight(attribute.getName()));
                 attributeDTOs.add(attributeDTO);
             }

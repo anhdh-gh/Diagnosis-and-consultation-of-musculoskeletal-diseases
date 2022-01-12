@@ -48,6 +48,7 @@
                         <li id="home-page"><a href="<c:url value='${request.contextPath}/customer'/>">Home</a></li>
                         <li id="contact-page"><a href="<c:url value='${request.contextPath}/customer/contact'/>">Contact</a></li>
                         <li id="manual-page"><a href="<c:url value='${request.contextPath}/customer/manual'/>">Manual</a></li>
+                        <li><a href="<c:url value='${request.contextPath}/manager'/>">Manager</a></li>
                     </ul>
                 </nav>
             </div>

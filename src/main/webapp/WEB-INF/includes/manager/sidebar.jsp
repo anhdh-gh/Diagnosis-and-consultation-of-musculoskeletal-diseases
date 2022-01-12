@@ -24,6 +24,13 @@
                         <span>Attributes</span>
                     </a>
                 </li>
+
+                <li>
+                    <a href="/">
+                        <img src="/img/manager/icon-house.png" alt="icon">
+                        <span>Customer</span>
+                    </a>
+                </li>
             </ul>
         </div>
     </div>

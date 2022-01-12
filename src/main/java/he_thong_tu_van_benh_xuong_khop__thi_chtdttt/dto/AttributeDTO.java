@@ -1,5 +1,6 @@
 package he_thong_tu_van_benh_xuong_khop__thi_chtdttt.dto;
 
+import he_thong_tu_van_benh_xuong_khop__thi_chtdttt.entity.Disease;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -13,5 +14,5 @@ public class AttributeDTO {
     private String name;
     private double weight;
     private List<String> values;
-    private int quantityDisease;
+    private List<Disease> diseases;
 }

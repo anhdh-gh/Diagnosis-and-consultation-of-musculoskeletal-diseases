@@ -35,6 +35,7 @@
                                             <th>Weight</th>
                                             <th>Values</th>
                                             <th>Quantity disease</th>
+                                            <th>Diseases</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -65,7 +66,30 @@
                                                     </div>
                                                 </td>
 
-                                                <td>${attributeDTO.quantityDisease}</td>
+                                                <td>${attributeDTO.diseases.size()}</td>
+
+                                                <td>
+                                                    <div class="dropdown">
+                                                        <c:if test="${attributeDTO.diseases.size() == 1}">
+                                                            <span role="button"
+                                                                  class="btn btn-white btn-sm btn-rounded"
+                                                            >${attributeDTO.diseases[0].name}
+                                                            </span>
+                                                        </c:if>
+
+                                                        <c:if test="${attributeDTO.diseases.size() > 1}">
+                                                            <span role="button"
+                                                                  class="btn btn-white btn-sm btn-rounded dropdown-toggle"
+                                                                  data-toggle="dropdown" aria-expanded="false">${attributeDTO.diseases[0].name}
+                                                            </span>
+                                                            <div class="dropdown-menu">
+                                                                <c:forEach var="disease" items="${attributeDTO.diseases}">
+                                                                    <span style="cursor: pointer" class="dropdown-item">${disease.name}</span>
+                                                                </c:forEach>
+                                                            </div>
+                                                        </c:if>
+                                                    </div>
+                                                </td>
                                             </tr>
                                         </c:forEach>
                                     </tbody>

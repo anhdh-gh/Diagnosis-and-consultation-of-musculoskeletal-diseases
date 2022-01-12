@@ -18,7 +18,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @Controller
-@RequestMapping("/customer")
+@RequestMapping(value = {"", "/customer"})
 public class CustomerController {
 
     private DiseaseService diseaseService;
@@ -40,7 +40,7 @@ public class CustomerController {
     public void processDiagnose(@RequestParam MultiValueMap<String, String> allRequestParams, Model model) {
         Case _case = new Case(new ArrayList<>());
         allRequestParams.forEach((k, v) -> _case.getAttributes().add(new Attribute(k, v.stream().map(s -> new AttributeValue(s)).collect(Collectors.toList()))));
-        System.out.println(_case);
+
     }
 
     @GetMapping("/contact")
