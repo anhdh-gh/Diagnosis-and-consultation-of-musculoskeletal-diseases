@@ -6,6 +6,7 @@ import he_thong_tu_van_benh_xuong_khop__thi_chtdttt.entity.AttributeValue;
 import he_thong_tu_van_benh_xuong_khop__thi_chtdttt.entity.Case;
 import he_thong_tu_van_benh_xuong_khop__thi_chtdttt.entity.Disease;
 import he_thong_tu_van_benh_xuong_khop__thi_chtdttt.repository.DiseaseRepository;
+import javafx.util.Pair;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -41,7 +42,7 @@ public class DiseaseService {
         diseaseRepository.deleteById(ID);
     }
 
-    public List<Disease> caseBaseReasoning(Case caseInput) {
+    public Pair<Double, List<Disease>> caseBaseReasoning(Case caseInput) {
         // Lấy tất cả các case trong hệ thống
         List<Disease> allDiseases = diseaseRepository.findAll();
         allDiseases = allDiseases != null ? allDiseases : new ArrayList<>();
@@ -123,7 +124,7 @@ public class DiseaseService {
         }
 
         System.err.println("============================================================= End =============================================================\n\n");
-        return diseasesResult;
+        return new Pair<>(max, diseasesResult);
     }
 
     public double calculateWeight(String nameAttribute) {

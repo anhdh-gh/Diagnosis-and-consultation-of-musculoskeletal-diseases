@@ -5,6 +5,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import he_thong_tu_van_benh_xuong_khop__thi_chtdttt.dto.AttributeDTO;
 import he_thong_tu_van_benh_xuong_khop__thi_chtdttt.entity.*;
 import he_thong_tu_van_benh_xuong_khop__thi_chtdttt.service.DiseaseService;
+import javafx.util.Pair;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -42,7 +43,7 @@ public class CustomerController {
     @PostMapping
     public String processDiagnose(@RequestParam MultiValueMap<String, String> allRequestParams, Model model, HttpServletRequest request) {
         // Kiểm tra session có lưu bệnh k
-        List<Disease> diseasesResult = (List<Disease>) request.getSession().getAttribute("diseasesResult");
+        Pair<Double, List<Disease>> diseasesResult = ( Pair<Double, List<Disease>>) request.getSession().getAttribute("diseasesResult");
 
         // Chưa chẩn đoán
         if(diseasesResult == null) {
@@ -68,13 +69,13 @@ public class CustomerController {
             });
 
             // Thực hiện so sánh và chuẩn đoán bệnh
-            List<Disease> diseases = diseaseService.caseBaseReasoning(caseInput);
+            Pair<Double, List<Disease>> diseases = diseaseService.caseBaseReasoning(caseInput);
 
             // Lọc ra các triệu chứng của mức độ
             List<AttributeDTO> attributeDTOs = new ArrayList<>();
 
             // Lặp các triệu chứng của các mức dộ bệnh, để lọc ra các triệu chứng cho người dùng chọn
-            diseases.forEach(disease -> {
+            diseases.getValue().forEach(disease -> {
                 disease.getDegrees().forEach(degree -> {
                     degree.getSymptoms().forEach(symptom -> {
 
@@ -114,7 +115,7 @@ public class CustomerController {
         // Đã chẩn doán
         else {
             Case caseInput = (Case) request.getSession().getAttribute("caseInput");
-            List<Disease> diseases =  diseasesResult;
+            Pair<Double, List<Disease>> diseases =  diseasesResult;
 
             // Xóa session
             request.getSession().removeAttribute("diseasesResult");
@@ -139,7 +140,7 @@ public class CustomerController {
             });
 
             // Xóa mức độ người dùng không mắc phải (chỉ cần có 1 triệu chứng của giai đoạn cao nhất thì kết luận giai đoạn cao nhất)
-            for(Disease disease: diseases) {
+            for(Disease disease: diseases.getValue()) {
                 for(int i = disease.getDegrees().size()-1 ; i >= 0 ; i--) {
                     Degree degree = disease.getDegrees().get(i);
                     if(degree.getSymptoms().stream().anyMatch(symptom -> symptom.getSymptomValues().stream().anyMatch(symptomValue -> {

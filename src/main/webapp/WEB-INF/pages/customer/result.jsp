@@ -46,13 +46,15 @@
                         <div class="card h-100">
                             <h6 class="card-header text-danger font-weight-bold">Kết quả chẩn đoán:</h6>
                             <div class="card-body">
+
                                 <c:choose>
-                                    <c:when test="${diseasesResult != null && diseasesResult.size() > 0}">
+                                    <c:when test="${diseasesResult.value != null && diseasesResult.value.size() > 0}">
                                         <h6 class="font-weight-bold text-success mb-3">Bạn có thể bị mắc các bệnh sau:</h6>
 
-                                        <c:forEach var="disease" items="${diseasesResult}" varStatus="loop">
+                                        <c:forEach var="disease" items="${diseasesResult.value}" varStatus="loop">
                                             <p class="font-weight-bold mb-1">${loop.index + 1}. ${disease.name}</p>
                                             <ul class="pl-4 ml-2 pb-3">
+                                                <li>Độ chính xác: ${diseasesResult.key * 100}%</li>
                                                 <c:if test="${disease.degrees != null && disease.degrees.size() > 0}">
                                                     <li>Mức độ bệnh: ${disease.degrees[0].name}</li>
                                                 </c:if>
