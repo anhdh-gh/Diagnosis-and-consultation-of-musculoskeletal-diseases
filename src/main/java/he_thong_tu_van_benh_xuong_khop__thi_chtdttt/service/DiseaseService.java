@@ -66,6 +66,8 @@ public class DiseaseService {
             // 2. Lấy ra từng case trong hệ thống
             Case caseCompare = disease.get_case();
 
+            System.out.println("------------------------------ " + disease.getName() + " ------------------------------");
+
             // 3. So sánh từng thuộc tính của 2 case với nhau
             for (Attribute attributeCompare : caseCompare.getAttributes()) {
                 for (Attribute attributeInput : caseInput.getAttributes()) {
@@ -98,10 +100,10 @@ public class DiseaseService {
                                         similarity += attributeValueCompare.getComparativeValue();
                                     break;
                             }
-
-                            // 6. Nhân độ so khớp với trọng số của thuộc tính, và lưu vào kết quả so sánh
-                            ketQuaSoSanhCase += similarity*attributeInput.getWeight();
                         }
+
+                        // 6. Nhân độ so khớp với trọng số của thuộc tính, và lưu vào kết quả so sánh
+                        ketQuaSoSanhCase += similarity*attributeInput.getWeight();
                     }
                 }
             }
@@ -117,6 +119,7 @@ public class DiseaseService {
             // 9. Nếu ketQuaSoSanhCase > max => Xóa hết kết quả cũ, và thêm kết quả mới vào
             if(ketQuaSoSanhCase > max) {
                 diseasesResult = new ArrayList<>(Arrays.asList(disease));
+                max = ketQuaSoSanhCase;
             }
         }
 
