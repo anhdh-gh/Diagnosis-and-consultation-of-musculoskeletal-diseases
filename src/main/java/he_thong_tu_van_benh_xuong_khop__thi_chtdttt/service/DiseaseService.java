@@ -8,12 +8,7 @@ import he_thong_tu_van_benh_xuong_khop__thi_chtdttt.entity.Disease;
 import he_thong_tu_van_benh_xuong_khop__thi_chtdttt.repository.DiseaseRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.util.MultiValueMap;
 
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.time.LocalDate;
-import java.time.ZoneId;
 import java.util.*;
 import java.util.concurrent.atomic.AtomicReference;
 import java.util.stream.Collectors;
@@ -137,7 +132,7 @@ public class DiseaseService {
 
         // Tính
         double sum = 0;
-        double quantity = 0;
+        double quantity = 1;
 
         for(Attribute attribute: attributes) {
             if(attribute.getName().trim().equalsIgnoreCase(nameAttribute.trim())) {
