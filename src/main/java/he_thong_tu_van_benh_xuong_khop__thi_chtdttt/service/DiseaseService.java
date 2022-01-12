@@ -100,9 +100,9 @@ public class DiseaseService {
                                         similarity += attributeValueCompare.getComparativeValue();
                                     break;
                             }
-
-                            System.out.println("Thuộc tính: " + attributeInput.getName() + " - Trọng số: " + attributeInput.getWeight() +  " - Độ so khớp: " + similarity);
                         }
+
+                        System.out.println("Thuộc tính: " + attributeInput.getName() + " - Trọng số: " + attributeInput.getWeight() +  " - Độ so khớp: " + similarity);
 
                         // 6. Nhân độ so khớp với trọng số của thuộc tính, và lưu vào kết quả so sánh
                         ketQuaSoSanhCase += similarity*attributeInput.getWeight();
