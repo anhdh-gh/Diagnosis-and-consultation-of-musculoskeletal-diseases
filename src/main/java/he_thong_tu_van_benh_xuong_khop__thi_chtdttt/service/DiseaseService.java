@@ -133,7 +133,7 @@ public class DiseaseService {
 
         // Tính
         double sum = 0;
-        double quantity = 1;
+        double quantity = 0;
 
         for(Attribute attribute: attributes) {
             if(attribute.getName().trim().equalsIgnoreCase(nameAttribute.trim())) {
@@ -142,7 +142,7 @@ public class DiseaseService {
             }
         }
 
-        return sum/quantity;
+        return quantity == 0 ? 0 : Math.round(sum/quantity);
     }
 
     private Disease getDiseaseByAttributeID(int attributeID) {
