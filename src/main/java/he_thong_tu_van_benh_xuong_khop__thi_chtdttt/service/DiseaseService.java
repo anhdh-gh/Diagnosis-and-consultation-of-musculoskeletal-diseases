@@ -2,15 +2,19 @@ package he_thong_tu_van_benh_xuong_khop__thi_chtdttt.service;
 
 import he_thong_tu_van_benh_xuong_khop__thi_chtdttt.dto.AttributeDTO;
 import he_thong_tu_van_benh_xuong_khop__thi_chtdttt.entity.Attribute;
+import he_thong_tu_van_benh_xuong_khop__thi_chtdttt.entity.AttributeValue;
+import he_thong_tu_van_benh_xuong_khop__thi_chtdttt.entity.Case;
 import he_thong_tu_van_benh_xuong_khop__thi_chtdttt.entity.Disease;
 import he_thong_tu_van_benh_xuong_khop__thi_chtdttt.repository.DiseaseRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.util.MultiValueMap;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Optional;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.time.ZoneId;
+import java.util.*;
 import java.util.concurrent.atomic.AtomicReference;
 import java.util.stream.Collectors;
 
@@ -42,7 +46,75 @@ public class DiseaseService {
         diseaseRepository.deleteById(ID);
     }
 
-    private double calculateWeight(String nameAttribute) {
+    public List<Disease> caseBaseReasoning(Case caseInput) {
+        // Lấy tất cả các case trong hệ thống
+        List<Disease> allDiseases = diseaseRepository.findAll();
+        allDiseases = allDiseases != null ? allDiseases : new ArrayList<>();
+
+        // Thực hiện so sánh với từng case
+        List<Disease> diseasesResult = new ArrayList<>();
+        double max = 0.6;
+
+        // 1. Lặp từng case có trong hệ thống
+        for (Disease disease : allDiseases) {
+            double ketQuaSoSanhCase = 0;
+
+            // 2. Lấy ra từng case trong hệ thống
+            Case caseCompare = disease.get_case();
+
+            // 3. So sánh từng thuộc tính của 2 case với nhau
+            for (Attribute attributeCompare : caseCompare.getAttributes()) {
+                for (Attribute attributeInput : caseInput.getAttributes()) {
+
+                    // 4. Nếu có thuộc tính giống nhau
+                    if (attributeCompare.getName().trim().equalsIgnoreCase(attributeInput.getName().trim())) {
+
+                        // 5. Tính độ so khớp của hai thuộc tính
+                        double similarity = 0;
+                        for (AttributeValue attributeValueCompare : attributeCompare.getAttributeValues()) { // Lặp từng giá trị của thuộc tính
+
+                            switch (attributeCompare.getName()) {
+                                // Nếu so sánh độ tuổi => So sánh nó có nằm trong khoảng của độ tuổi không
+                                case "Độ tuổi": {
+                                    String[] doTuoiArr = attributeValueCompare.getValue().trim().split("-");
+                                    int doTuoiBegin = Integer.parseInt(doTuoiArr[0]);
+                                    int doTuoiEnd = Integer.parseInt(doTuoiArr[1]);
+                                    if (attributeInput.getAttributeValues().stream().allMatch(attributeValue -> {
+                                        int tuoi = Integer.parseInt(attributeValue.getValue().trim());
+                                        return tuoi >= doTuoiBegin && tuoi <= doTuoiEnd;
+                                    }))
+                                        similarity += attributeValueCompare.getComparativeValue();
+                                    break;
+                                }
+
+                                // Nếu so sánh giá trị => So sánh hai giá trị có giống nhau không
+                                default:
+                                    // Nếu trong thuộc tính của caseInput có chứa giá trị này
+                                    if (attributeInput.getAttributeValues().stream().anyMatch(attributeValue -> attributeValue.getValue().trim().equalsIgnoreCase(attributeValueCompare.getValue().trim())))
+                                        similarity += attributeValueCompare.getComparativeValue();
+                                    break;
+                            }
+
+                            // 6. Nhân độ so khớp với trọng số của thuộc tính, và lưu vào kết quả so sánh
+                            ketQuaSoSanhCase += similarity*attributeInput.getWeight();
+                        }
+                    }
+                }
+            }
+
+            // 7. Nếu ketquaSoSanhCase = max => Thêm vào list kết quả
+            if(ketQuaSoSanhCase == max)
+                diseasesResult.add(disease);
+
+            // 8. Nếu ketQuaSoSanhCase > max => Xóa hết kết quả cũ, và thêm kết quả mới vào
+            if(ketQuaSoSanhCase > max)
+                diseasesResult = new ArrayList<>(Arrays.asList(disease));
+        }
+
+        return diseasesResult;
+    }
+
+    public double calculateWeight(String nameAttribute) {
         // Lấy ra tất cả các attributes
         List<Attribute> attributes = getAllAttributes();
 
@@ -62,8 +134,7 @@ public class DiseaseService {
 
     private Disease getDiseaseByAttributeID(int attributeID) {
         List<Disease> diseases = diseaseRepository.findAll();
-
-        return diseases.stream().filter(disease -> disease.get_case().getAttributes().stream().anyMatch(attribute -> attributeID == attribute.getID())).findFirst().get();
+        return diseases.stream().filter(disease -> disease.get_case().getAttributes().stream().anyMatch(attribute -> attributeID == attribute.getID())).findFirst().orElse(null);
     }
 
     private List<Attribute> getAllAttributes() {

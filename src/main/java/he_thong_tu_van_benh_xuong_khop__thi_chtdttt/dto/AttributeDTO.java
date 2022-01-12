@@ -15,4 +15,9 @@ public class AttributeDTO {
     private double weight;
     private List<String> values;
     private List<Disease> diseases;
+
+    public AttributeDTO(String name, List<String> values) {
+        this.name = name;
+        this.values = values;
+    }
 }
