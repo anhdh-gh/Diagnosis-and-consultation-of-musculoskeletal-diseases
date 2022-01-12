@@ -54,6 +54,10 @@ public class DiseaseService {
         // Thực hiện so sánh với từng case
         List<Disease> diseasesResult = new ArrayList<>();
         double max = 0.6;
+        double sumWeight = 0;
+        for(Attribute attribute: caseInput.getAttributes()) {
+            sumWeight += attribute.getWeight();
+        }
 
         // 1. Lặp từng case có trong hệ thống
         for (Disease disease : allDiseases) {
@@ -102,13 +106,18 @@ public class DiseaseService {
                 }
             }
 
-            // 7. Nếu ketquaSoSanhCase = max => Thêm vào list kết quả
-            if(ketQuaSoSanhCase == max)
-                diseasesResult.add(disease);
+            // 7. Tính kết quả
+            ketQuaSoSanhCase /= sumWeight;
 
-            // 8. Nếu ketQuaSoSanhCase > max => Xóa hết kết quả cũ, và thêm kết quả mới vào
-            if(ketQuaSoSanhCase > max)
+            // 8. Nếu ketquaSoSanhCase = max => Thêm vào list kết quả
+            if(ketQuaSoSanhCase == max) {
+                diseasesResult.add(disease);
+            }
+
+            // 9. Nếu ketQuaSoSanhCase > max => Xóa hết kết quả cũ, và thêm kết quả mới vào
+            if(ketQuaSoSanhCase > max) {
                 diseasesResult = new ArrayList<>(Arrays.asList(disease));
+            }
         }
 
         return diseasesResult;
