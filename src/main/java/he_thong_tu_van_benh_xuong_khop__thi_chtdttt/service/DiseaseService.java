@@ -100,6 +100,8 @@ public class DiseaseService {
                                         similarity += attributeValueCompare.getComparativeValue();
                                     break;
                             }
+
+                            System.out.println("Thuộc tính: " + attributeInput.getName() + " - Trọng số: " + attributeInput.getWeight() +  " - Độ so khớp: " + similarity);
                         }
 
                         // 6. Nhân độ so khớp với trọng số của thuộc tính, và lưu vào kết quả so sánh
@@ -109,6 +111,7 @@ public class DiseaseService {
             }
 
             // 7. Tính kết quả
+            System.out.println("Ket qua so sanh case: " + ketQuaSoSanhCase + "/" + sumWeight + " = " + ketQuaSoSanhCase/sumWeight);
             ketQuaSoSanhCase /= sumWeight;
 
             // 8. Nếu ketquaSoSanhCase = max => Thêm vào list kết quả
