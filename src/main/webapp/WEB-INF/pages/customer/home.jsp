@@ -21,7 +21,7 @@
 
                 <div class="card my-5">
                     <div class="card-header">
-                        <h4 class="text-center font-weight-bold text-danger">Điền đầy đủ thông tin</h4>
+                        <h4 class="text-center font-weight-bold text-danger">Khai báo thông tin</h4>
                     </div>
                     <div class="card-body overflow-auto">
                         <form method="post" id="formInput">

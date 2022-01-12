@@ -60,6 +60,7 @@ public class DiseaseService {
         }
 
         // 1. Lặp từng case có trong hệ thống
+        System.err.println("============================================================= Begin =============================================================\n");
         for (Disease disease : allDiseases) {
             double ketQuaSoSanhCase = 0;
 
@@ -111,7 +112,7 @@ public class DiseaseService {
             }
 
             // 7. Tính kết quả
-            System.out.println("Ket qua so sanh case: " + ketQuaSoSanhCase + "/" + sumWeight + " = " + ketQuaSoSanhCase/sumWeight);
+            System.out.println("Ket qua so sanh case: " + ketQuaSoSanhCase + "/" + sumWeight + " = " + ketQuaSoSanhCase/sumWeight + "\n");
             ketQuaSoSanhCase /= sumWeight;
 
             // 8. Nếu ketquaSoSanhCase = max => Thêm vào list kết quả
@@ -126,6 +127,7 @@ public class DiseaseService {
             }
         }
 
+        System.err.println("============================================================= End =============================================================\n\n");
         return diseasesResult;
     }
 
