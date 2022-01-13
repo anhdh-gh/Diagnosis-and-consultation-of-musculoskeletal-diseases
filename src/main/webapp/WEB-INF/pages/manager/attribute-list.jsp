@@ -33,6 +33,7 @@
                                         <tr>
                                             <th>Name</th>
                                             <th>Weight</th>
+                                            <th>Quantity values</th>
                                             <th>Values</th>
                                             <th>Quantity disease</th>
                                             <th>Diseases</th>
@@ -43,6 +44,7 @@
                                             <tr>
                                                 <td>${attributeDTO.name}</td>
                                                 <td>${attributeDTO.weight}</td>
+                                                <td>${attributeDTO.values.size()}</td>
                                                 <td>
                                                     <div class="dropdown">
                                                         <c:if test="${attributeDTO.values.size() == 1}">
