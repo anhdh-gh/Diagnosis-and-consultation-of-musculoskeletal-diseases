@@ -1,5 +1,6 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <!DOCTYPE html>
 <html>
     <head>
@@ -54,7 +55,8 @@
                                         <c:forEach var="disease" items="${diseasesResult.value}" varStatus="loop">
                                             <p class="font-weight-bold mb-1">${loop.index + 1}. ${disease.name}</p>
                                             <ul class="pl-4 ml-2 pb-3">
-                                                <li>Độ chính xác: ${diseasesResult.key * 100}%</li>
+                                                <c:set var="billableTime"><fmt:formatNumber type="number" minFractionDigits="2" maxFractionDigits="2" value="${diseasesResult.key * 100}" /></c:set>
+                                                <li>Độ chính xác: ${billableTime}%</li>
                                                 <c:if test="${disease.degrees != null && disease.degrees.size() > 0}">
                                                     <li>Mức độ bệnh: ${disease.degrees[0].name}</li>
                                                 </c:if>

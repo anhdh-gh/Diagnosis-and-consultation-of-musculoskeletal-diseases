@@ -125,7 +125,6 @@ public class DiseaseService {
         }
 
         System.err.println("============================================================= End =============================================================\n\n");
-        max = Math.round(max);
         return new Pair<>(max, diseasesResult);
     }
 
