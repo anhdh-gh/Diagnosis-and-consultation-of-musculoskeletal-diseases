@@ -40,9 +40,7 @@
                                 <table class="table custom-table datatable">
                                     <thead class="thead-light">
                                         <tr>
-                                            <th>ID</th>
                                             <th>Name</th>
-                                            <th>CaseID</th>
                                             <th>Attribute case</th>
                                             <th>Quantity attribute</th>
                                             <th>Sum attribute</th>
@@ -54,9 +52,7 @@
                                     <tbody>
                                         <c:forEach var="disease" items="${diseases}">
                                             <tr>
-                                                <td>${disease.ID}</td>
                                                 <td>${disease.name}</td>
-                                                <td>${disease._case.ID}</td>
                                                 <td>
                                                     <div class="dropdown">
                                                         <c:if test="${disease._case.attributes.size() == 1}">

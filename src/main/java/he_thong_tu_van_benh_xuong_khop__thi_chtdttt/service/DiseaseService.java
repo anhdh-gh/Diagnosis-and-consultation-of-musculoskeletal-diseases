@@ -6,6 +6,7 @@ import he_thong_tu_van_benh_xuong_khop__thi_chtdttt.entity.AttributeValue;
 import he_thong_tu_van_benh_xuong_khop__thi_chtdttt.entity.Case;
 import he_thong_tu_van_benh_xuong_khop__thi_chtdttt.entity.Disease;
 import he_thong_tu_van_benh_xuong_khop__thi_chtdttt.repository.DiseaseRepository;
+import he_thong_tu_van_benh_xuong_khop__thi_chtdttt.utils.VNCharacterUtils;
 import javafx.util.Pair;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -199,7 +200,9 @@ public class DiseaseService {
             }
         });
 
-        attributeDTOs.forEach(attributeDTO -> attributeDTO.getValues().sort((o1, o2) -> o1.trim().compareToIgnoreCase(o2.trim())));
+        // Sort theo thứ tự a -> b
+        attributeDTOs.sort((o1, o2) -> VNCharacterUtils.removeAccent(o1.getName().trim()).compareToIgnoreCase(VNCharacterUtils.removeAccent(o2.getName().trim())));
+        attributeDTOs.forEach(attributeDTO -> attributeDTO.getValues().sort((o1, o2) -> VNCharacterUtils.removeAccent(o1.trim()).compareToIgnoreCase(VNCharacterUtils.removeAccent(o2.trim()))));
 
         return attributeDTOs;
     }
