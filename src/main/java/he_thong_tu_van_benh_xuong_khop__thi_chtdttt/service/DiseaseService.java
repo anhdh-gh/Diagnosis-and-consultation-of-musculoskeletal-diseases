@@ -124,6 +124,7 @@ public class DiseaseService {
         }
 
         System.err.println("============================================================= End =============================================================\n\n");
+        max = Math.round(max);
         return new Pair<>(max, diseasesResult);
     }
 
@@ -198,7 +199,7 @@ public class DiseaseService {
             }
         });
 
-        attributeDTOs.forEach(attributeDTO -> attributeDTO.getValues().sort((o1, o2) -> o1.length() - o2.length()));
+        attributeDTOs.forEach(attributeDTO -> attributeDTO.getValues().sort((o1, o2) -> o1.trim().compareToIgnoreCase(o2.trim())));
 
         return attributeDTOs;
     }
