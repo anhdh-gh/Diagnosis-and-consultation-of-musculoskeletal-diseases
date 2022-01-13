@@ -68,7 +68,7 @@
                                         <p>
                                             Nguyên nhân có thể là:
                                             <br/>1. Triệu chứng quá ít: <a href="/customer">Chọn lại các triệu chứng</a>
-                                            <br/>2. Hệ thống không thể chẩn đoán: <a href="/contact">Liên hệ với chúng tôi</a>
+                                            <br/>2. Hệ thống chưa có bệnh với các triệu chứng này: <a href="/contact">Liên hệ với chúng tôi</a>
                                         </p>
                                     </c:otherwise>
                                 </c:choose>
