@@ -57,7 +57,7 @@ public class DiseaseService {
         }
 
         // 1. Lặp từng case có trong hệ thống
-        System.err.println("============================================================= Begin =============================================================\n");
+        System.out.println("============================================================= Begin =============================================================\n");
         for (Disease disease : allDiseases) {
             double ketQuaSoSanhCase = 0;
 
@@ -124,7 +124,7 @@ public class DiseaseService {
             }
         }
 
-        System.err.println("============================================================= End =============================================================\n\n");
+        System.out.println("============================================================= End =============================================================\n\n");
         return new Pair<>(max, sortAttributeSameCaseInput(diseasesResult, caseInput));
     }
 

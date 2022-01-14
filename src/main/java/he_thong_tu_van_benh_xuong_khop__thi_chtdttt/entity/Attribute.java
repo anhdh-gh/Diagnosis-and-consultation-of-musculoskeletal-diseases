@@ -25,7 +25,7 @@ public class Attribute {
     @Column(name = "Weight")
     private double weight;
 
-    @OneToMany(targetEntity = AttributeValue.class, cascade = CascadeType.ALL)
+    @OneToMany(targetEntity = AttributeValue.class, cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     @JoinColumn(name = "AttributeID", nullable = false)
     private List<AttributeValue> attributeValues;
 
