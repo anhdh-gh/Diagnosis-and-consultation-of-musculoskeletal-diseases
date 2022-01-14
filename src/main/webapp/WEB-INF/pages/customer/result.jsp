@@ -22,7 +22,7 @@
             <!-- Breadcrumb Section End -->
 
             <div class="container mt-5">
-                <h4 class="font-weight-bold py-2 d-inline-block" style="border-bottom: 3px solid #d30000;">Kết quả</h4>
+                <h4 class="font-weight-bold py-2 d-inline-block" style="border-bottom: 3px solid #d30000; cursor: pointer"  id="result_cases">Kết quả</h4>
 
                 <div class="row my-5">
                     <div class="col-12 col-lg-4 pb-3 pb-lg-0">
@@ -78,6 +78,57 @@
                         </div>
                     </div>
                 </div>
+
+                 <div class="row mb-5" id="compareCase">
+                     <div class="col-12">
+                         <div class="card h-100">
+                             <h6 class="card-header text-danger font-weight-bold">Case input và case kết quả: </h6>
+                             <div class="card-body">
+
+                                 <div class="row">
+                                       <div class="col-md-6 col-xl-6 my-1">
+                                           <div class="card h-100">
+                                               <h6 class="card-header text-danger font-weight-bold">Case input: </h6>
+                                               <div class="card-body">
+                                                   <c:forEach var="attribute" items="${caseInput.attributes}" varStatus="loop">
+                                                       <h6 class="font-weight-bold text-primary">
+                                                               ${loop.index + 1}. ${attribute.name} (Trọng số; ${attribute.weight})
+                                                       </h6>
+                                                       <ul class="pl-4 ml-2 pb-3">
+                                                           <c:forEach var="attributeValue" items="${attribute.attributeValues}">
+                                                               <li>${attributeValue.value}</li>
+                                                           </c:forEach>
+                                                       </ul>
+                                                   </c:forEach>
+                                               </div>
+                                           </div>
+                                       </div>
+
+                                     <c:forEach var="disease" items="${diseasesResult.value}" varStatus="loop">
+                                         <div class="col-md-6 col-xl-6 my-1">
+                                             <div class="card h-100">
+                                                 <h6 class="card-header text-danger font-weight-bold">Case kết quả: ${disease.name}</h6>
+                                                 <div class="card-body">
+                                                     <c:forEach var="attribute" items="${disease._case.attributes}" varStatus="loop">
+                                                         <h6 class="font-weight-bold text-primary">
+                                                                 ${loop.index + 1}. ${attribute.name}
+                                                         </h6>
+                                                         <ul class="pl-4 ml-2 pb-3">
+                                                             <c:forEach var="attributeValue" items="${attribute.attributeValues}">
+                                                                 <li>${attributeValue.value} (${attributeValue.comparativeValue})</li>
+                                                             </c:forEach>
+                                                         </ul>
+                                                     </c:forEach>
+                                                 </div>
+                                             </div>
+                                         </div>
+                                     </c:forEach>
+                                 </div>
+
+                             </div>
+                         </div>
+                     </div>
+                 </div>
             </div>
 
             <!-- Footer Section Begin -->
@@ -91,6 +142,14 @@
             $("#page-title").text('Result');
 
             $("#sub-title").text('Kết quả chẩn đoán bệnh!');
+
+
+            $(document).ready(function(){
+                $("#compareCase").hide();
+                $("#result_cases").click(function(){
+                    $("#compareCase").toggle("fast");
+                });
+            });
         </script>
     </body>
 </html>

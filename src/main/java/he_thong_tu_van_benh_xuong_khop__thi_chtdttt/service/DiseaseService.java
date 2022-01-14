@@ -125,7 +125,29 @@ public class DiseaseService {
         }
 
         System.err.println("============================================================= End =============================================================\n\n");
-        return new Pair<>(max, diseasesResult);
+        return new Pair<>(max, sortAttributeSameCaseInput(diseasesResult, caseInput));
+    }
+
+    private List<Disease> sortAttributeSameCaseInput(List<Disease> diseasesResult, Case caseInput) {
+        List<String> nameAttributes = caseInput.getAttributes().stream().map(attribute -> attribute.getName().trim()).collect(Collectors.toList());
+
+        diseasesResult.forEach(disease -> {
+            // Lọc ra những thuộc tính giống với case input và đặt chúng lên đầu của list
+            List<Attribute> sameAttributes = new ArrayList<>();
+            nameAttributes.forEach(nameAttributeInput -> {
+                Attribute attribute = disease.get_case().getAttributes().stream().filter(attributei -> attributei.getName().trim().equalsIgnoreCase(nameAttributeInput.trim())).findFirst().orElse(null);
+                if(attribute != null) sameAttributes.add(attribute);
+            });
+
+            // Lọc ra các huộc tính không giống với case input và đặt vào cuối của list
+            List<Attribute> notSameAttributes = new ArrayList<>(disease.get_case().getAttributes().stream().filter(attributei -> sameAttributes.stream().allMatch(sameAttribute -> !sameAttribute.getName().trim().equalsIgnoreCase(attributei.getName().trim()))).collect(Collectors.toList()));
+
+            // Sắp xếp xong thì lưu vào case kết quả
+            disease.get_case().setAttributes(sameAttributes);
+            disease.get_case().getAttributes().addAll(notSameAttributes);
+        });
+
+        return diseasesResult;
     }
 
     public double calculateWeight(String nameAttribute) {
