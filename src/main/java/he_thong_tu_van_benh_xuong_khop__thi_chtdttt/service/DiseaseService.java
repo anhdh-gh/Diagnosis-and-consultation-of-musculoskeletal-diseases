@@ -26,12 +26,12 @@ public class DiseaseService {
     }
 
     public Disease save(Disease disease) {
-        return diseaseRepository.save(disease);
+        return diseaseRepository.set(disease);
     }
 
     public Disease findByID(int ID) {
-        Optional<Disease> optionalDisease = diseaseRepository.findById(ID);
-        return optionalDisease.isPresent() ? optionalDisease.get() : null;
+        Disease disease = diseaseRepository.get(ID);
+        return disease;
     }
 
     public List<Disease> findAll() {
@@ -40,7 +40,7 @@ public class DiseaseService {
     }
 
     public void deleteByID(int ID) {
-        diseaseRepository.deleteById(ID);
+        diseaseRepository.remove(ID);
     }
 
     public Pair<Double, List<Disease>> caseBaseReasoning(Case caseInput) {

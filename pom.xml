@@ -8,29 +8,18 @@
 		<version>2.6.2</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>nhom_07</groupId>
-	<artifactId>he_thong_tu_van_benh_xuong_khop__thi_chtdttt</artifactId>
+	<groupId>dohunganh</groupId>
+	<artifactId>he_thong_chan_doan_va_tu_van_benh_xuong_khop</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>he_thong_tu_van_benh_xuong_khop__thi_chtdttt</name>
-	<description>Hệ thống tư vấn bệnh xương khớp (Thi các hệ thống dựa trên tri thức)</description>
+	<name>he_thong_chan_doan_va_tu_van_benh_xuong_khop</name>
+	<description>Hệ thống chẩn đoán và tư vấn bệnh xương khớp</description>
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>
 	<dependencies>
-
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-data-jpa</artifactId>
-		</dependency>
-
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
-		</dependency>
-
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-validation</artifactId>
 		</dependency>
 
 		<dependency>
@@ -41,15 +30,15 @@
 		</dependency>
 
 		<dependency>
-			<groupId>mysql</groupId>
-			<artifactId>mysql-connector-java</artifactId>
-			<scope>runtime</scope>
-		</dependency>
-
-		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
 			<optional>true</optional>
+		</dependency>
+
+		<dependency>
+			<groupId>org.openjfx</groupId>
+			<artifactId>javafx-controls</artifactId>
+			<version>19-ea+7</version>
 		</dependency>
 
 		<dependency>
@@ -68,6 +57,18 @@
 			<artifactId>jstl</artifactId>
 		</dependency>
 
+		<dependency>
+			<groupId>com.github.fabiomaffioletti</groupId>
+			<artifactId>spring-boot-starter-data-firebase</artifactId>
+			<version>1.0.0.RELEASE</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.google.firebase</groupId>
+			<artifactId>firebase-admin</artifactId>
+			<version>8.2.0</version>
+			<scope>runtime</scope>
+		</dependency>
 	</dependencies>
 
 	<build>

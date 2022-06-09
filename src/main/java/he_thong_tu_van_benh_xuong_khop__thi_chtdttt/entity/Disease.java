@@ -1,37 +1,26 @@
 package he_thong_tu_van_benh_xuong_khop__thi_chtdttt.entity;
 
+import com.github.fabiomaffioletti.firebase.document.FirebaseDocument;
+import com.github.fabiomaffioletti.firebase.document.FirebaseId;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.*;
 import java.util.List;
 
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
-@Entity
-@Table(name = "disease")
+@FirebaseDocument("/diseases")
 public class Disease {
 
-    @Id
-    @Column(name = "ID")
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @FirebaseId
     private int ID;
 
-    @Column(name = "Name")
     private String name;
-
-    @OneToOne(targetEntity = Case.class, cascade = CascadeType.ALL)
-    @JoinColumn(name = "CaseID")
     private Case _case;
-
-    @OneToOne(targetEntity = Treatment.class, cascade = CascadeType.ALL)
-    @JoinColumn(name = "TreatmentID")
     private Treatment treatment;
 
-    @OneToMany(targetEntity = Degree.class, cascade = CascadeType.ALL)
-    @JoinColumn(name = "DiseaseID", nullable = false)
     private List<Degree> degrees;
 
     public Disease(String name, Treatment treatment, List<Degree> degrees, Case _case) {

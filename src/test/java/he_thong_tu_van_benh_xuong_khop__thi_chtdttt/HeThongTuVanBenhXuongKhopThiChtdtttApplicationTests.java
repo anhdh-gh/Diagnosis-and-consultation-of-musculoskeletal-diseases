@@ -45,6 +45,6 @@ class HeThongTuVanBenhXuongKhopThiChtdtttApplicationTests {
 			)
 		);
 
-		diseaseRepository.save(disease);
+		diseaseRepository.set(disease);
 	}
 }
