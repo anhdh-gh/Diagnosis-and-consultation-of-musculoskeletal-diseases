@@ -12,30 +12,33 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.*;
-import java.util.concurrent.atomic.AtomicReference;
 import java.util.stream.Collectors;
 
 @Service
 public class DiseaseService {
 
+    private  List<Disease> diseases;
     private DiseaseRepository diseaseRepository;
 
     @Autowired
     public DiseaseService(DiseaseRepository diseaseRepository) {
         this.diseaseRepository = diseaseRepository;
+        this.diseases = diseaseRepository.findAll();;
     }
 
     public Disease save(Disease disease) {
-        return diseaseRepository.set(disease);
-    }
-
-    public Disease findByID(int ID) {
-        Disease disease = diseaseRepository.get(ID);
+//        return diseaseRepository.set(disease);
         return disease;
     }
 
+    public Disease findByID(int ID) {
+        for(Disease disease: diseases)
+            if(disease.getID() == ID)
+                return disease;
+        return null;
+    }
+
     public List<Disease> findAll() {
-        List<Disease> diseases = diseaseRepository.findAll();
         return diseases != null ? diseases : new ArrayList<>();
     }
 
@@ -45,7 +48,7 @@ public class DiseaseService {
 
     public ImmutablePair<Double, List<Disease>> caseBaseReasoning(Case caseInput) {
         // Lấy tất cả các case trong hệ thống
-        List<Disease> allDiseases = diseaseRepository.findAll();
+        List<Disease> allDiseases = this.diseases;
         allDiseases = allDiseases != null ? allDiseases : new ArrayList<>();
 
         // Thực hiện so sánh với từng case
@@ -169,12 +172,10 @@ public class DiseaseService {
     }
 
     private Disease getDiseaseByAttributeID(int attributeID) {
-        List<Disease> diseases = diseaseRepository.findAll();
         return diseases.stream().filter(disease -> disease.get_case().getAttributes().stream().anyMatch(attribute -> attributeID == attribute.getID())).findFirst().orElse(null);
     }
 
     private List<Attribute> getAllAttributes() {
-        List<Disease> diseases = diseaseRepository.findAll();
         if(diseases == null) diseases = new ArrayList<>();
 
         // Lấy ra tất cả các attributes
@@ -222,8 +223,8 @@ public class DiseaseService {
         });
 
         // Sort theo thứ tự a -> b
-//        attributeDTOs.sort((o1, o2) -> VNCharacterUtils.removeAccent(o1.getName().trim()).compareToIgnoreCase(VNCharacterUtils.removeAccent(o2.getName().trim())));
-//        attributeDTOs.forEach(attributeDTO -> attributeDTO.getValues().sort((o1, o2) -> VNCharacterUtils.removeAccent(o1.trim()).compareToIgnoreCase(VNCharacterUtils.removeAccent(o2.trim()))));
+        attributeDTOs.sort((o1, o2) -> VNCharacterUtils.removeAccent(o1.getName().trim()).compareToIgnoreCase(VNCharacterUtils.removeAccent(o2.getName().trim())));
+        attributeDTOs.forEach(attributeDTO -> attributeDTO.getValues().sort((o1, o2) -> VNCharacterUtils.removeAccent(o1.trim()).compareToIgnoreCase(VNCharacterUtils.removeAccent(o2.trim()))));
 
         return attributeDTOs;
     }
