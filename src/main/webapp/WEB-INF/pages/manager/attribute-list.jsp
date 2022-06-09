@@ -5,7 +5,7 @@
 <html lang="en">
 <head>
     <jsp:include page="../../includes/manager/css.jsp" />
-    <title>Diseases</title>
+    <title>Attributes</title>
 </head>
 <body>
     <!-- Loader begin -->
