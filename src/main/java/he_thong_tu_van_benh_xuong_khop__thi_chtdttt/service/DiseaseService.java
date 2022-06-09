@@ -222,8 +222,8 @@ public class DiseaseService {
         });
 
         // Sort theo thứ tự a -> b
-        attributeDTOs.sort((o1, o2) -> VNCharacterUtils.removeAccent(o1.getName().trim()).compareToIgnoreCase(VNCharacterUtils.removeAccent(o2.getName().trim())));
-        attributeDTOs.forEach(attributeDTO -> attributeDTO.getValues().sort((o1, o2) -> VNCharacterUtils.removeAccent(o1.trim()).compareToIgnoreCase(VNCharacterUtils.removeAccent(o2.trim()))));
+//        attributeDTOs.sort((o1, o2) -> VNCharacterUtils.removeAccent(o1.getName().trim()).compareToIgnoreCase(VNCharacterUtils.removeAccent(o2.getName().trim())));
+//        attributeDTOs.forEach(attributeDTO -> attributeDTO.getValues().sort((o1, o2) -> VNCharacterUtils.removeAccent(o1.trim()).compareToIgnoreCase(VNCharacterUtils.removeAccent(o2.trim()))));
 
         return attributeDTOs;
     }
