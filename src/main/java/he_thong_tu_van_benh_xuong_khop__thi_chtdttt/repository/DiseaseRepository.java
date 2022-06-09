@@ -1,10 +1,8 @@
 package he_thong_tu_van_benh_xuong_khop__thi_chtdttt.repository;
 
 import he_thong_tu_van_benh_xuong_khop__thi_chtdttt.entity.Disease;
-import he_thong_tu_van_benh_xuong_khop__thi_chtdttt.service.DiseaseService;
 import he_thong_tu_van_benh_xuong_khop__thi_chtdttt.utils.FileUtils;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
