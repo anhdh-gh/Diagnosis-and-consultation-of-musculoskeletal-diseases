@@ -1,0 +1,2630 @@
+{
+  "diseases": {
+    "21": {
+      "_case": {
+        "attributes": [
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 0.14,
+                "id": 29,
+                "value": "Khớp bàn ngón chân"
+              },
+              {
+                "comparativeValue": 0.14,
+                "id": 30,
+                "value": "Bàn chân"
+              },
+              {
+                "comparativeValue": 0.14,
+                "id": 31,
+                "value": "Khớp cổ chân"
+              },
+              {
+                "comparativeValue": 0.14,
+                "id": 32,
+                "value": "Khớp gối"
+              },
+              {
+                "comparativeValue": 0.14,
+                "id": 33,
+                "value": "Bàn tay"
+              },
+              {
+                "comparativeValue": 0.14,
+                "id": 34,
+                "value": "Khớp cổ tay"
+              },
+              {
+                "comparativeValue": 0.14,
+                "id": 35,
+                "value": "Khủy"
+              }
+            ],
+            "id": 25,
+            "name": "Bộ phận đau",
+            "weight": 30
+          },
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 1,
+                "id": 36,
+                "value": "Khi vận động"
+              }
+            ],
+            "id": 26,
+            "name": "Thời điểm xảy ra đau",
+            "weight": 20
+          },
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 0.25,
+                "id": 37,
+                "value": "Sưng"
+              },
+              {
+                "comparativeValue": 0.1,
+                "id": 38,
+                "value": "Đỏ"
+              },
+              {
+                "comparativeValue": 0.1,
+                "id": 39,
+                "value": "Phù nề"
+              },
+              {
+                "comparativeValue": 0.1,
+                "id": 40,
+                "value": "Căng bóng"
+              },
+              {
+                "comparativeValue": 0.1,
+                "id": 41,
+                "value": "Nóng"
+              },
+              {
+                "comparativeValue": 0.1,
+                "id": 42,
+                "value": "Cứng khớp"
+              },
+              {
+                "comparativeValue": 0.25,
+                "id": 43,
+                "value": "Không đối xứng"
+              }
+            ],
+            "id": 27,
+            "name": "Trạng thái khớp",
+            "weight": 45
+          },
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 0.33,
+                "id": 44,
+                "value": "Hẹp khe khớp"
+              },
+              {
+                "comparativeValue": 0.33,
+                "id": 45,
+                "value": "Gai xương"
+              },
+              {
+                "comparativeValue": 0.33,
+                "id": 46,
+                "value": "Có các khuyết xương hình hốc ở đầu xương"
+              }
+            ],
+            "id": 28,
+            "name": "Xquang",
+            "weight": 65
+          },
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 0.5,
+                "id": 47,
+                "value": "Acid uric máu tăng"
+              },
+              {
+                "comparativeValue": 0.3,
+                "id": 48,
+                "value": "Tốc độ lắng máu tăng"
+              },
+              {
+                "comparativeValue": 0.2,
+                "id": 49,
+                "value": "CRP tăng"
+              }
+            ],
+            "id": 29,
+            "name": "Trạng thái máu",
+            "weight": 75
+          },
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 1,
+                "id": 50,
+                "value": "Có"
+              }
+            ],
+            "id": 30,
+            "name": "Sốt",
+            "weight": 27
+          },
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 1,
+                "id": 51,
+                "value": "Bị tổn thương"
+              }
+            ],
+            "id": 31,
+            "name": "Gân",
+            "weight": 37
+          },
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 1,
+                "id": 52,
+                "value": "Bị tổn thương"
+              }
+            ],
+            "id": 32,
+            "name": "Bao khớp",
+            "weight": 41
+          },
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 1,
+                "id": 53,
+                "value": "Bị tổn thương"
+              }
+            ],
+            "id": 33,
+            "name": "Thận",
+            "weight": 59
+          },
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 1,
+                "id": 54,
+                "value": "30-60"
+              }
+            ],
+            "id": 34,
+            "name": "Độ tuổi",
+            "weight": 15
+          }
+        ],
+        "id": 23
+      },
+      "id": 21,
+      "name": "Bệnh gút",
+      "treatment": {
+        "id": 21,
+        "method": "https://dohunganh-27-09-2000.github.io/Huong-dan-dieu-tri-benh-co-xuong-khop/B%E1%BB%86NH%20G%C3%9AT.html"
+      }
+    },
+    "22": {
+      "_case": {
+        "attributes": [
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 0.25,
+                "id": 55,
+                "value": "Khớp gối"
+              },
+              {
+                "comparativeValue": 0.25,
+                "id": 56,
+                "value": "Khớp háng"
+              },
+              {
+                "comparativeValue": 0.25,
+                "id": 57,
+                "value": "Khớp cổ tay"
+              },
+              {
+                "comparativeValue": 0.25,
+                "id": 58,
+                "value": "Khớp cổ chân"
+              }
+            ],
+            "id": 35,
+            "name": "Bộ phận đau",
+            "weight": 30
+          },
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 1,
+                "id": 59,
+                "value": "Co cơ"
+              }
+            ],
+            "id": 36,
+            "name": "Trạng thái cơ",
+            "weight": 20
+          },
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 0.2,
+                "id": 60,
+                "value": "Sưng"
+              },
+              {
+                "comparativeValue": 0.2,
+                "id": 61,
+                "value": "Nóng"
+              },
+              {
+                "comparativeValue": 0.2,
+                "id": 62,
+                "value": "Đỏ"
+              },
+              {
+                "comparativeValue": 0.2,
+                "id": 63,
+                "value": "Tràn dịch khớp"
+              },
+              {
+                "comparativeValue": 0.2,
+                "id": 64,
+                "value": "Viêm"
+              }
+            ],
+            "id": 37,
+            "name": "Trạng thái khớp",
+            "weight": 47
+          },
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 1,
+                "id": 65,
+                "value": "Hình ảnh soi gương"
+              }
+            ],
+            "id": 38,
+            "name": "Xquang",
+            "weight": 80
+          },
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 0.25,
+                "id": 66,
+                "value": "Số lượng bạch cầu tăng"
+              },
+              {
+                "comparativeValue": 0.25,
+                "id": 67,
+                "value": "Tỷ lệ bạch cầu trung tính tăng"
+              },
+              {
+                "comparativeValue": 0.25,
+                "id": 68,
+                "value": "Tốc độ lắng máu tăng"
+              },
+              {
+                "comparativeValue": 0.25,
+                "id": 69,
+                "value": "CRP tăng"
+              }
+            ],
+            "id": 39,
+            "name": "Trạng thái máu",
+            "weight": 85
+          },
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 1,
+                "id": 70,
+                "value": "Có"
+              }
+            ],
+            "id": 40,
+            "name": "Sốt",
+            "weight": 22
+          },
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 1,
+                "id": 71,
+                "value": "Có"
+              }
+            ],
+            "id": 41,
+            "name": "Rét",
+            "weight": 15
+          },
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 1,
+                "id": 72,
+                "value": "Khô"
+              }
+            ],
+            "id": 42,
+            "name": "Môi",
+            "weight": 17
+          },
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 1,
+                "id": 73,
+                "value": "Bẩn"
+              }
+            ],
+            "id": 43,
+            "name": "Lưỡi",
+            "weight": 15
+          },
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 1,
+                "id": 74,
+                "value": "Hôi"
+              }
+            ],
+            "id": 44,
+            "name": "Hơi thở",
+            "weight": 10
+          },
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 0.5,
+                "id": 75,
+                "value": "Nổi ban đỏ"
+              },
+              {
+                "comparativeValue": 0.5,
+                "id": 76,
+                "value": "Mụn mủ"
+              }
+            ],
+            "id": 45,
+            "name": "Ngoài da",
+            "weight": 25
+          },
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 0.33,
+                "id": 77,
+                "value": "Đái buốt"
+              },
+              {
+                "comparativeValue": 0.33,
+                "id": 78,
+                "value": "Đái rát"
+              },
+              {
+                "comparativeValue": 0.33,
+                "id": 79,
+                "value": "Đái máu mủ"
+              }
+            ],
+            "id": 46,
+            "name": "Triệu chứng tại bộ phận sinh dục",
+            "weight": 27
+          },
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 1,
+                "id": 80,
+                "value": "Viêm nhiễm"
+              }
+            ],
+            "id": 47,
+            "name": "Đường tiết niệu",
+            "weight": 51
+          },
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 1,
+                "id": 81,
+                "value": "0-39"
+              }
+            ],
+            "id": 48,
+            "name": "Độ tuổi",
+            "weight": 20
+          }
+        ],
+        "id": 24
+      },
+      "id": 22,
+      "name": "Bệnh viêm khớp nhiễm khuẩn",
+      "treatment": {
+        "id": 22,
+        "method": "https://dohunganh-27-09-2000.github.io/Huong-dan-dieu-tri-benh-co-xuong-khop/VI%C3%8AM%20KH%E1%BB%9AP%20NHI%E1%BB%84M%20KHU%E1%BA%A8N.html"
+      }
+    },
+    "23": {
+      "_case": {
+        "attributes": [
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 0.33,
+                "id": 82,
+                "value": "Sưng"
+              },
+              {
+                "comparativeValue": 0.33,
+                "id": 83,
+                "value": "Nóng"
+              },
+              {
+                "comparativeValue": 0.33,
+                "id": 84,
+                "value": "Đỏ"
+              }
+            ],
+            "id": 49,
+            "name": "Trạng thái cơ",
+            "weight": 25
+          },
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 1,
+                "id": 85,
+                "value": "Sưng"
+              }
+            ],
+            "id": 50,
+            "name": "Trạng thái khớp",
+            "weight": 20
+          },
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 0.5,
+                "id": 86,
+                "value": "Hình ảnh hủy xương"
+              },
+              {
+                "comparativeValue": 0.5,
+                "id": 87,
+                "value": "Phản ứng màng xương"
+              }
+            ],
+            "id": 51,
+            "name": "Xquang",
+            "weight": 81
+          },
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 0.33,
+                "id": 88,
+                "value": "Số lượng bạch cầu tăng"
+              },
+              {
+                "comparativeValue": 0.33,
+                "id": 89,
+                "value": "Tốc độ lắng máu tăng"
+              },
+              {
+                "comparativeValue": 0.33,
+                "id": 90,
+                "value": "CRP tăng"
+              }
+            ],
+            "id": 52,
+            "name": "Trạng thái máu",
+            "weight": 85
+          },
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 1,
+                "id": 91,
+                "value": "Có"
+              }
+            ],
+            "id": 53,
+            "name": "Sốt",
+            "weight": 11
+          },
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 1,
+                "id": 92,
+                "value": "Có"
+              }
+            ],
+            "id": 54,
+            "name": "Rét",
+            "weight": 9
+          },
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 1,
+                "id": 93,
+                "value": "Có"
+              }
+            ],
+            "id": 55,
+            "name": "Mệt mỏi",
+            "weight": 8
+          }
+        ],
+        "id": 25
+      },
+      "id": 23,
+      "name": "Bệnh viêm xương tủy nhiễm khuẩn",
+      "treatment": {
+        "id": 23,
+        "method": "https://ptiteduvn-my.sharepoint.com/:w:/g/personal/anhdh_b18cn010_stu_ptit_edu_vn/EQi6Jte1syRIv62FZNRsR54BUQJmxYUnT0UL9dNW29esQA?e=srv6jD"
+      }
+    },
+    "24": {
+      "_case": {
+        "attributes": [
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 1,
+                "id": 94,
+                "value": "Cột sống"
+              }
+            ],
+            "id": 56,
+            "name": "Bộ phận đau",
+            "weight": 25
+          },
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 0.25,
+                "id": 95,
+                "value": "Cứng cột sống vào buổi sáng"
+              },
+              {
+                "comparativeValue": 0.25,
+                "id": 96,
+                "value": "Đau âm ỉ"
+              },
+              {
+                "comparativeValue": 0.2,
+                "id": 97,
+                "value": "Có tiếng lục khục khi cử động"
+              },
+              {
+                "comparativeValue": 0.15,
+                "id": 98,
+                "value": "Gù"
+              },
+              {
+                "comparativeValue": 0.15,
+                "id": 99,
+                "value": "Vẹo"
+              }
+            ],
+            "id": 57,
+            "name": "Trạng thái cột sống",
+            "weight": 27
+          },
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 0.2,
+                "id": 100,
+                "value": "Hẹp khe khớp"
+              },
+              {
+                "comparativeValue": 0.2,
+                "id": 101,
+                "value": "Bờ diện khớp nhẵn"
+              },
+              {
+                "comparativeValue": 0.2,
+                "id": 102,
+                "value": "Đặc xương dưới sụn"
+              },
+              {
+                "comparativeValue": 0.2,
+                "id": 103,
+                "value": "Gai xương thân đốt sống"
+              },
+              {
+                "comparativeValue": 0.2,
+                "id": 104,
+                "value": "Hẹp lỗ liên hợp đốt sống"
+              }
+            ],
+            "id": 58,
+            "name": "Xquang",
+            "weight": 78
+          }
+        ],
+        "id": 26
+      },
+      "id": 24,
+      "name": "Bệnh thoái hóa cột sống thắt lưng",
+      "treatment": {
+        "id": 24,
+        "method": "https://ptiteduvn-my.sharepoint.com/:w:/g/personal/anhdh_b18cn010_stu_ptit_edu_vn/ETIFnhi2fpBLp-bM_tjS-rMB0vnsFpNnubmsETNdcWUOew?e=gASFjl"
+      }
+    },
+    "25": {
+      "_case": {
+        "attributes": [
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 1,
+                "id": 105,
+                "value": "Cột sống"
+              }
+            ],
+            "id": 59,
+            "name": "Bộ phận đau",
+            "weight": 21
+          },
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 0.16,
+                "id": 106,
+                "value": "Sau khi lao động quá sức"
+              },
+              {
+                "comparativeValue": 0.16,
+                "id": 107,
+                "value": "Sau khi hoạt động sai tư thế"
+              },
+              {
+                "comparativeValue": 0.16,
+                "id": 108,
+                "value": "Sau khi đi đường rung xóc"
+              },
+              {
+                "comparativeValue": 0.16,
+                "id": 109,
+                "value": "Sau khi nhiễm lạnh"
+              },
+              {
+                "comparativeValue": 0.16,
+                "id": 110,
+                "value": "Sau khi cử động đột ngột"
+              },
+              {
+                "comparativeValue": 0.16,
+                "id": 111,
+                "value": "Sau khi stress"
+              }
+            ],
+            "id": 60,
+            "name": "Thời điểm xảy ra đau",
+            "weight": 75
+          },
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 0.5,
+                "id": 112,
+                "value": "Thoái hóa cột sống"
+              },
+              {
+                "comparativeValue": 0.5,
+                "id": 113,
+                "value": "Loãng xương"
+              }
+            ],
+            "id": 61,
+            "name": "Xquang",
+            "weight": 87
+          },
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 1,
+                "id": 114,
+                "value": "Thiếu máu"
+              }
+            ],
+            "id": 62,
+            "name": "Trạng thái máu",
+            "weight": 50
+          }
+        ],
+        "id": 27
+      },
+      "id": 25,
+      "name": "Bệnh hội chứng đau thắt lưng",
+      "treatment": {
+        "id": 25,
+        "method": "https://ptiteduvn-my.sharepoint.com/:w:/g/personal/anhdh_b18cn010_stu_ptit_edu_vn/Ef_3sTwUovJLsnejJXD9JOYBsPY46-GPMc0GwzluFe2B8g?e=sIYDwQ"
+      }
+    },
+    "26": {
+      "_case": {
+        "attributes": [
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 0.16,
+                "id": 115,
+                "value": "Cột sống"
+              },
+              {
+                "comparativeValue": 0.16,
+                "id": 116,
+                "value": "Thắt lưng"
+              },
+              {
+                "comparativeValue": 0.16,
+                "id": 117,
+                "value": "Mặt ngoài đùi"
+              },
+              {
+                "comparativeValue": 0.16,
+                "id": 118,
+                "value": "Mặt ngoài cẳng chân"
+              },
+              {
+                "comparativeValue": 0.16,
+                "id": 119,
+                "value": "Mắt cá chân"
+              },
+              {
+                "comparativeValue": 0.16,
+                "id": 120,
+                "value": "Ngón chân"
+              }
+            ],
+            "id": 63,
+            "name": "Bộ phận đau",
+            "weight": 50
+          },
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 1,
+                "id": 121,
+                "value": "Khi vận động"
+              }
+            ],
+            "id": 64,
+            "name": "Thời điểm xảy ra đau",
+            "weight": 20
+          },
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 1,
+                "id": 122,
+                "value": "Thoát vị đĩa đệm"
+              }
+            ],
+            "id": 65,
+            "name": "Tiểu sử bệnh án",
+            "weight": 20
+          },
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 1,
+                "id": 123,
+                "value": "30-50"
+              }
+            ],
+            "id": 66,
+            "name": "Độ tuổi",
+            "weight": 25
+          }
+        ],
+        "id": 28
+      },
+      "id": 26,
+      "name": "Bệnh đau thần kinh tọa",
+      "treatment": {
+        "id": 26,
+        "method": "https://ptiteduvn-my.sharepoint.com/:w:/g/personal/anhdh_b18cn010_stu_ptit_edu_vn/EbJ2IOh1RPNPsiDFJ6F09JcBbc9J9lMQ0kl6j0Ue8BGB3w?e=hTH6wl"
+      }
+    },
+    "27": {
+      "_case": {
+        "attributes": [
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 0.33,
+                "id": 124,
+                "value": "Khớp đùi"
+              },
+              {
+                "comparativeValue": 0.33,
+                "id": 125,
+                "value": "Khớp háng"
+              },
+              {
+                "comparativeValue": 0.33,
+                "id": 126,
+                "value": "Khớp gối"
+              }
+            ],
+            "id": 67,
+            "name": "Bộ phận đau",
+            "weight": 30
+          },
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 0.6,
+                "id": 127,
+                "value": "Tràn dịch khớp"
+              },
+              {
+                "comparativeValue": 0.4,
+                "id": 128,
+                "value": "Tăng sinh màng hoạt dịch khớp"
+              }
+            ],
+            "id": 68,
+            "name": "Trạng thái khớp",
+            "weight": 90
+          },
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 1,
+                "id": 129,
+                "value": "3-10"
+              }
+            ],
+            "id": 69,
+            "name": "Độ tuổi",
+            "weight": 30
+          },
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 0.25,
+                "id": 130,
+                "value": "Số lượng bạch cầu tăng"
+              },
+              {
+                "comparativeValue": 0.25,
+                "id": 131,
+                "value": "Tỷ lệ bạch cầu trung tính tăng"
+              },
+              {
+                "comparativeValue": 0.25,
+                "id": 132,
+                "value": "Tốc độ lắng máu tăng"
+              },
+              {
+                "comparativeValue": 0.25,
+                "id": 133,
+                "value": "CRP tăng"
+              }
+            ],
+            "id": 70,
+            "name": "Trạng thái máu",
+            "weight": 75
+          },
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 1,
+                "id": 134,
+                "value": "Có"
+              }
+            ],
+            "id": 71,
+            "name": "Sốt",
+            "weight": 20
+          },
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 0.33,
+                "id": 135,
+                "value": "Khe khớp háng như rộng ra"
+              },
+              {
+                "comparativeValue": 0.33,
+                "id": 136,
+                "value": "Chòm xương đùi có vẻ như phẳng ra"
+              },
+              {
+                "comparativeValue": 0.33,
+                "id": 137,
+                "value": "Mất nhẹ chất khoáng ở đầu xương"
+              }
+            ],
+            "id": 72,
+            "name": "Xquang",
+            "weight": 65
+          }
+        ],
+        "id": 29
+      },
+      "id": 27,
+      "name": "Bệnh viêm màng hoạt dịch khớp háng thoáng qua",
+      "treatment": {
+        "id": 27,
+        "method": "https://ptiteduvn-my.sharepoint.com/:w:/g/personal/anhdh_b18cn010_stu_ptit_edu_vn/EaSRu5oOfmtDn35epdu5WVYBzC_9g8_aqmdFKt828T8nzQ?e=D1OQRp"
+      }
+    },
+    "29": {
+      "_case": {
+        "attributes": [
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 0.5,
+                "id": 138,
+                "value": "Gáy"
+              },
+              {
+                "comparativeValue": 0.5,
+                "id": 139,
+                "value": "Khớp vai"
+              }
+            ],
+            "id": 73,
+            "name": "Bộ phận đau",
+            "weight": 80
+          },
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 1,
+                "id": 140,
+                "value": "Vận động cổ"
+              }
+            ],
+            "id": 74,
+            "name": "Thời điểm xảy ra đau",
+            "weight": 25
+          },
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 0.5,
+                "id": 141,
+                "value": "Xương sống chếch 3/4"
+              },
+              {
+                "comparativeValue": 0.5,
+                "id": 142,
+                "value": "Mất đường cong sinh lý "
+              }
+            ],
+            "id": 75,
+            "name": "Xquang",
+            "weight": 70
+          },
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 0.25,
+                "id": 143,
+                "value": "Vị trí dễ bị ép "
+              },
+              {
+                "comparativeValue": 0.25,
+                "id": 144,
+                "value": "Mức độ thoái vị đĩa đệm"
+              },
+              {
+                "comparativeValue": 0.25,
+                "id": 145,
+                "value": "Vị trí khối thoát vị "
+              },
+              {
+                "comparativeValue": 0.25,
+                "id": 146,
+                "value": "Mức độ hẹp ống sống "
+              }
+            ],
+            "id": 76,
+            "name": "Cộng hưởng từ",
+            "weight": 65
+          },
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 1,
+                "id": 147,
+                "value": "Có"
+              }
+            ],
+            "id": 77,
+            "name": "Mệt mỏi",
+            "weight": 5
+          },
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 1,
+                "id": 148,
+                "value": "Có"
+              }
+            ],
+            "id": 78,
+            "name": "Dối loạn giấc ngủ",
+            "weight": 15
+          }
+        ],
+        "id": 31
+      },
+      "id": 29,
+      "name": "Bệnh thoái hóa cột sống cổ",
+      "treatment": {
+        "id": 29,
+        "method": "https://ptiteduvn-my.sharepoint.com/:w:/g/personal/anhdh_b18cn010_stu_ptit_edu_vn/Ee42xtC3BF9FiwgS0d0elO8By52V9IwR-AIGYDCAtlp8sg?e=aKNq0h"
+      }
+    },
+    "30": {
+      "_case": {
+        "attributes": [
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 0.5,
+                "id": 149,
+                "value": "Gáy"
+              },
+              {
+                "comparativeValue": 0.5,
+                "id": 150,
+                "value": "Cổ"
+              }
+            ],
+            "id": 79,
+            "name": "Bộ phận đau",
+            "weight": 60
+          },
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 1,
+                "id": 151,
+                "value": "Tổn thương cột sống cổ"
+              }
+            ],
+            "id": 80,
+            "name": "Xquang",
+            "weight": 70
+          },
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 0.5,
+                "id": 152,
+                "value": "Thoát hóa cột sống cổ"
+              },
+              {
+                "comparativeValue": 0.5,
+                "id": 153,
+                "value": "Thoát vị đĩa đệm"
+              }
+            ],
+            "id": 81,
+            "name": "Tiểu sử bệnh án",
+            "weight": 30
+          },
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 1,
+                "id": 154,
+                "value": "Có"
+              }
+            ],
+            "id": 82,
+            "name": "Mệt mỏi",
+            "weight": 5
+          },
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 1,
+                "id": 155,
+                "value": "Có"
+              }
+            ],
+            "id": 83,
+            "name": "Gầy sút",
+            "weight": 5
+          },
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 1,
+                "id": 156,
+                "value": "Giảm thị lực"
+              }
+            ],
+            "id": 84,
+            "name": "Mắt",
+            "weight": 15
+          },
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 1,
+                "id": 157,
+                "value": "Ù"
+              }
+            ],
+            "id": 85,
+            "name": "Tai",
+            "weight": 15
+          }
+        ],
+        "id": 32
+      },
+      "id": 30,
+      "name": "Bệnh hội chứng cổ vai cánh tay ",
+      "treatment": {
+        "id": 30,
+        "method": "https://ptiteduvn-my.sharepoint.com/:w:/g/personal/anhdh_b18cn010_stu_ptit_edu_vn/EQGhFQaBWE5KsG0J9cnnk68BzcGsHO4G02fT0IfQ2ZNqbA?e=nLG0B6"
+      }
+    },
+    "31": {
+      "_case": {
+        "attributes": [
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 1,
+                "id": 158,
+                "value": "Khớp vai"
+              }
+            ],
+            "id": 86,
+            "name": "Bộ phận đau",
+            "weight": 65
+          },
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 1,
+                "id": 159,
+                "value": "Vận động vai"
+              }
+            ],
+            "id": 87,
+            "name": "Thời điểm xảy ra đau",
+            "weight": 20
+          },
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 1,
+                "id": 160,
+                "value": "Chấn thương vùng vai"
+              }
+            ],
+            "id": 88,
+            "name": "Tiểu sử bệnh án",
+            "weight": 30
+          },
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 1,
+                "id": 161,
+                "value": "Có"
+              }
+            ],
+            "id": 89,
+            "name": "Dối loạn giấc ngủ",
+            "weight": 10
+          },
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 1,
+                "id": 162,
+                "value": "51-200"
+              }
+            ],
+            "id": 90,
+            "name": "Độ tuổi",
+            "weight": 8
+          },
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 1,
+                "id": 163,
+                "value": "Có hình ảnh calci hóa tại gân "
+              }
+            ],
+            "id": 91,
+            "name": "Xquang",
+            "weight": 70
+          }
+        ],
+        "id": 33
+      },
+      "degrees": [
+        {
+          "id": 17,
+          "name": "Đơn thuần"
+        },
+        {
+          "id": 18,
+          "name": "Cấp tính",
+          "symptoms": [
+            {
+              "id": 16,
+              "name": "Trạng thái khớp",
+              "symptomValues": [
+                {
+                  "id": 16,
+                  "value": "Hình ảnh calci hóa kích thước khác nhau ở khoảng cùng vai - mấu động "
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 19,
+          "name": "Giả liệt khớp vai",
+          "symptoms": [
+            {
+              "id": 17,
+              "name": "Gân",
+              "symptomValues": [
+                {
+                  "id": 17,
+                  "value": "Đứt các gân mũ cơ quay (Phần gân kết nối giữa cánh tay với cơ thể) "
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "id": 31,
+      "name": "Bệnh viêm quanh khớp vai",
+      "treatment": {
+        "id": 31,
+        "method": "https://ptiteduvn-my.sharepoint.com/:w:/g/personal/anhdh_b18cn010_stu_ptit_edu_vn/EcujOkMeOPZOh63yalvEfyQBtQRZkb8V1xX2JxzgCj1Glw?e=ure9cf"
+      }
+    },
+    "32": {
+      "_case": {
+        "attributes": [
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 0.33,
+                "id": 164,
+                "value": "Xương"
+              },
+              {
+                "comparativeValue": 0.33,
+                "id": 165,
+                "value": "Lưng"
+              },
+              {
+                "comparativeValue": 0.33,
+                "id": 166,
+                "value": "Ngực"
+              }
+            ],
+            "id": 92,
+            "name": "Bộ phận đau",
+            "weight": 15
+          },
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 0.5,
+                "id": 167,
+                "value": "Gù"
+              },
+              {
+                "comparativeValue": 0.5,
+                "id": 168,
+                "value": "Vẹo"
+              }
+            ],
+            "id": 93,
+            "name": "Trạng thái cột sống",
+            "weight": 20
+          },
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 0.33,
+                "id": 169,
+                "value": "Gãy xương"
+              },
+              {
+                "comparativeValue": 0.33,
+                "id": 170,
+                "value": "Bệnh Khớp"
+              },
+              {
+                "comparativeValue": 0.33,
+                "id": 171,
+                "value": "Bệnh khớp mãn tính"
+              }
+            ],
+            "id": 94,
+            "name": "Tiểu sử bệnh án",
+            "weight": 75
+          },
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 1,
+                "id": 172,
+                "value": "61-200"
+              }
+            ],
+            "id": 95,
+            "name": "Độ tuổi",
+            "weight": 10
+          },
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 1,
+                "id": 173,
+                "value": "Biến dạng thân đốt sống"
+              }
+            ],
+            "id": 96,
+            "name": "Xquang",
+            "weight": 43
+          }
+        ],
+        "id": 34
+      },
+      "id": 32,
+      "name": "Bệnh loãng xương",
+      "treatment": {
+        "id": 32,
+        "method": "https://ptiteduvn-my.sharepoint.com/:w:/g/personal/anhdh_b18cn010_stu_ptit_edu_vn/Eam-tTtwd_dJhw2GWwWo3iYBKaAGml45X85qCQjtsWmzsQ?e=dqAOj0"
+      }
+    },
+    "33": {
+      "_case": {
+        "attributes": [
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 0.5,
+                "id": 174,
+                "value": "Lưng"
+              },
+              {
+                "comparativeValue": 0.5,
+                "id": 175,
+                "value": "Cổ"
+              }
+            ],
+            "id": 97,
+            "name": "Bộ phận đau",
+            "weight": 70
+          },
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 1,
+                "id": 176,
+                "value": "Về đêm"
+              }
+            ],
+            "id": 98,
+            "name": "Thời điểm xảy ra đau",
+            "weight": 60
+          },
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 0.5,
+                "id": 177,
+                "value": "Khối xơ cứng bao quanh ổ sáng "
+              },
+              {
+                "comparativeValue": 0.5,
+                "id": 178,
+                "value": "Tổn thương hình rõ nét "
+              }
+            ],
+            "id": 99,
+            "name": "Xquang",
+            "weight": 78
+          },
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 0.5,
+                "id": 179,
+                "value": "Cong"
+              },
+              {
+                "comparativeValue": 0.5,
+                "id": 180,
+                "value": "Vẹo"
+              }
+            ],
+            "id": 100,
+            "name": "Trạng thái cột sống",
+            "weight": 22
+          },
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 1,
+                "id": 181,
+                "value": "Viêm"
+              }
+            ],
+            "id": 101,
+            "name": "Trạng thái khớp",
+            "weight": 15
+          },
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 1,
+                "id": 182,
+                "value": "0-24"
+              }
+            ],
+            "id": 102,
+            "name": "Độ tuổi",
+            "weight": 20
+          },
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 1,
+                "id": 183,
+                "value": "Ngón tay dùi trống"
+              }
+            ],
+            "id": 103,
+            "name": "Tay",
+            "weight": 10
+          }
+        ],
+        "id": 35
+      },
+      "id": 33,
+      "name": "Bệnh u xương dạng xương",
+      "treatment": {
+        "id": 33,
+        "method": "https://ptiteduvn-my.sharepoint.com/:w:/g/personal/anhdh_b18cn010_stu_ptit_edu_vn/EZ2zExOb2uJIkPiywU9DkrUBaawfhjEkNP56-RQL7Wx4ug?e=efKHzb"
+      }
+    },
+    "34": {
+      "_case": {
+        "attributes": [
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 0.33,
+                "id": 184,
+                "value": "Khớp háng"
+              },
+              {
+                "comparativeValue": 0.33,
+                "id": 185,
+                "value": "Mông"
+              },
+              {
+                "comparativeValue": 0.33,
+                "id": 186,
+                "value": "Đùi"
+              }
+            ],
+            "id": 104,
+            "name": "Bộ phận đau",
+            "weight": 30
+          },
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 0.5,
+                "id": 187,
+                "value": "Giảm tín hiệu ở chỏm xương "
+              },
+              {
+                "comparativeValue": 0.5,
+                "id": 188,
+                "value": "Có ranh giới rõ với vùng giảm tín hiệu phía ngoài "
+              }
+            ],
+            "id": 105,
+            "name": "Cộng hưởng từ",
+            "weight": 80
+          },
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 1,
+                "id": 189,
+                "value": "Cổ xương bị chấn thương "
+              }
+            ],
+            "id": 106,
+            "name": "Tiểu sử bệnh án",
+            "weight": 65
+          },
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 1,
+                "id": 190,
+                "value": "51-200"
+              }
+            ],
+            "id": 107,
+            "name": "Độ tuổi",
+            "weight": 8
+          },
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 1,
+                "id": 191,
+                "value": "U trăng lưỡi liềm"
+              }
+            ],
+            "id": 108,
+            "name": "Xquang",
+            "weight": 75
+          }
+        ],
+        "id": 36
+      },
+      "degrees": [
+        {
+          "id": 20,
+          "name": "Giai đoạn sớm"
+        },
+        {
+          "id": 21,
+          "name": "Giai đoạn muộn hơn",
+          "symptoms": [
+            {
+              "id": 18,
+              "name": "Xquang",
+              "symptomValues": [
+                {
+                  "id": 18,
+                  "value": "Xẹp chỏm xương đùi"
+                },
+                {
+                  "id": 19,
+                  "value": "Thoái hóa thứ phát"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 22,
+          "name": "Giai đoạn muộn",
+          "symptoms": [
+            {
+              "id": 19,
+              "name": "Xquang",
+              "symptomValues": [
+                {
+                  "id": 20,
+                  "value": "Gãy xương dưới sụn"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "id": 34,
+      "name": "Bệnh hoại tử vô mạch chỏm xương đùi",
+      "treatment": {
+        "id": 34,
+        "method": "https://ptiteduvn-my.sharepoint.com/:w:/g/personal/anhdh_b18cn010_stu_ptit_edu_vn/EZOfoLlJ4phOkJhtJjmoeKkBwavy4EPpXRcz7J4zmblsMQ?e=bj6W98"
+      }
+    },
+    "35": {
+      "_case": {
+        "attributes": [
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 0.06,
+                "id": 192,
+                "value": "Khớp ngón gần bàn tay"
+              },
+              {
+                "comparativeValue": 0.06,
+                "id": 193,
+                "value": "Khớp bàn ngón tay"
+              },
+              {
+                "comparativeValue": 0.06,
+                "id": 194,
+                "value": "Khớp cổ tay"
+              },
+              {
+                "comparativeValue": 0.06,
+                "id": 195,
+                "value": "Khớp khuỷu"
+              },
+              {
+                "comparativeValue": 0.06,
+                "id": 196,
+                "value": "Khớp gối"
+              },
+              {
+                "comparativeValue": 0.06,
+                "id": 197,
+                "value": "Khớp cổ chân"
+              },
+              {
+                "comparativeValue": 0,
+                "id": 198,
+                "value": "Khớp bàn ngón chân"
+              }
+            ],
+            "id": 109,
+            "name": "Bộ phận đau",
+            "weight": 25
+          },
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 0.33,
+                "id": 199,
+                "value": "Viêm"
+              },
+              {
+                "comparativeValue": 0.33,
+                "id": 200,
+                "value": "Sưng"
+              },
+              {
+                "comparativeValue": 0.33,
+                "id": 201,
+                "value": "Tràn dịch khớp"
+              }
+            ],
+            "id": 110,
+            "name": "Trạng thái khớp",
+            "weight": 35
+          },
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 0.16,
+                "id": 202,
+                "value": "Khớp bị tổn thương"
+              },
+              {
+                "comparativeValue": 0.16,
+                "id": 203,
+                "value": "Có hình bào mòn đầu xương "
+              },
+              {
+                "comparativeValue": 0.16,
+                "id": 204,
+                "value": "Có hình hốc đầu xương "
+              },
+              {
+                "comparativeValue": 0.16,
+                "id": 205,
+                "value": "Hình khuyết đầu xương"
+              },
+              {
+                "comparativeValue": 0.16,
+                "id": 206,
+                "value": "Hẹp khe khớp "
+              },
+              {
+                "comparativeValue": 0.16,
+                "id": 207,
+                "value": "Mất chất khoáng đầu xương "
+              }
+            ],
+            "id": 111,
+            "name": "Xquang",
+            "weight": 50
+          }
+        ],
+        "id": 37
+      },
+      "id": 35,
+      "name": "Bệnh viêm khớp dạng thấp",
+      "treatment": {
+        "id": 35,
+        "method": "https://ptiteduvn-my.sharepoint.com/:w:/g/personal/anhdh_b18cn010_stu_ptit_edu_vn/EeVrf8AfYWJJpBoxk5UcGxUBDxOLxsETb9KDd_2z2kabbw?e=welV9W"
+      }
+    },
+    "36": {
+      "_case": {
+        "attributes": [
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 1,
+                "id": 208,
+                "value": "Khớp gối"
+              }
+            ],
+            "id": 112,
+            "name": "Bộ phận đau",
+            "weight": 20
+          },
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 0.6,
+                "id": 209,
+                "value": "Viêm màng hoạt dịch"
+              },
+              {
+                "comparativeValue": 0.3,
+                "id": 210,
+                "value": "Sưng"
+              },
+              {
+                "comparativeValue": 0.1,
+                "id": 211,
+                "value": "Tràn dịch khớp"
+              }
+            ],
+            "id": 113,
+            "name": "Trạng thái khớp",
+            "weight": 90
+          },
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 1,
+                "id": 212,
+                "value": "Dày màng hoạt dịch"
+              }
+            ],
+            "id": 114,
+            "name": "Siêu âm",
+            "weight": 60
+          },
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 1,
+                "id": 213,
+                "value": "Tốc độ lắng máu tăng"
+              }
+            ],
+            "id": 115,
+            "name": "Trạng thái máu",
+            "weight": 53
+          }
+        ],
+        "id": 38
+      },
+      "id": 36,
+      "name": "Bệnh viêm màng hoạt dịch khớp gối mạn tính không đặc hiệu",
+      "treatment": {
+        "id": 36,
+        "method": "https://ptiteduvn-my.sharepoint.com/:w:/g/personal/anhdh_b18cn010_stu_ptit_edu_vn/EV_KBw1LvtpAqAkga0gV3KIBFFQHJlSLqcj-5eVZ1_umIg?e=TCmFBv"
+      }
+    },
+    "38": {
+      "_case": {
+        "attributes": [
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 0.4,
+                "id": 223,
+                "value": "Mắt"
+              },
+              {
+                "comparativeValue": 0.2,
+                "id": 224,
+                "value": "Cột sống"
+              },
+              {
+                "comparativeValue": 0.4,
+                "id": 225,
+                "value": "Khớp"
+              }
+            ],
+            "id": 122,
+            "name": "Bộ phận đau",
+            "weight": 23
+          },
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 1,
+                "id": 226,
+                "value": "Viêm"
+              }
+            ],
+            "id": 123,
+            "name": "Trạng thái khớp",
+            "weight": 33
+          },
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 1,
+                "id": 227,
+                "value": "Có"
+              }
+            ],
+            "id": 124,
+            "name": "Sốt",
+            "weight": 8
+          },
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 1,
+                "id": 228,
+                "value": "Viêm điểm bám gân"
+              }
+            ],
+            "id": 125,
+            "name": "Gân",
+            "weight": 20
+          },
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 0.5,
+                "id": 229,
+                "value": "Đỏ"
+              },
+              {
+                "comparativeValue": 0.5,
+                "id": 230,
+                "value": "Sưng"
+              }
+            ],
+            "id": 126,
+            "name": "Mắt",
+            "weight": 27
+          },
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 1,
+                "id": 231,
+                "value": "Viêm"
+              }
+            ],
+            "id": 127,
+            "name": "Miệng",
+            "weight": 27
+          },
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 1,
+                "id": 232,
+                "value": "Viêm"
+              }
+            ],
+            "id": 128,
+            "name": "Lưỡi",
+            "weight": 27
+          },
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 1,
+                "id": 233,
+                "value": "Tăng sừng hóa"
+              }
+            ],
+            "id": 129,
+            "name": "Ngoài da",
+            "weight": 28
+          },
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 1,
+                "id": 234,
+                "value": "Viêm bao quy đầu"
+              }
+            ],
+            "id": 130,
+            "name": "Triệu chứng tại bộ phận sinh dục",
+            "weight": 76
+          },
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 1,
+                "id": 235,
+                "value": "Có"
+              }
+            ],
+            "id": 131,
+            "name": "Gầy sút",
+            "weight": 7
+          },
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 1,
+                "id": 236,
+                "value": "Có"
+              }
+            ],
+            "id": 132,
+            "name": "Mệt mỏi",
+            "weight": 7
+          },
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 1,
+                "id": 237,
+                "value": "Có"
+              }
+            ],
+            "id": 133,
+            "name": "Chán ăn",
+            "weight": 7
+          },
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 1,
+                "id": 238,
+                "value": "20-50"
+              }
+            ],
+            "id": 134,
+            "name": "Độ tuổi",
+            "weight": 10
+          },
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 0.5,
+                "id": 239,
+                "value": "Tốc độ lắng máu tăng"
+              },
+              {
+                "comparativeValue": 0.5,
+                "id": 240,
+                "value": "CRP tăng"
+              }
+            ],
+            "id": 135,
+            "name": "Trạng thái máu",
+            "weight": 45
+          },
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 0.33,
+                "id": 241,
+                "value": "Viêm đường tiết niệu "
+              },
+              {
+                "comparativeValue": 0.33,
+                "id": 242,
+                "value": "Viêm đường tiêu hoá "
+              },
+              {
+                "comparativeValue": 0.33,
+                "id": 243,
+                "value": "Viêm đường hô hấp "
+              }
+            ],
+            "id": 136,
+            "name": "Tiểu sử bệnh án",
+            "weight": 76
+          }
+        ],
+        "id": 40
+      },
+      "id": 38,
+      "name": "Bệnh viêm khớp phản ứng",
+      "treatment": {
+        "id": 38,
+        "method": "https://ptiteduvn-my.sharepoint.com/:w:/g/personal/anhdh_b18cn010_stu_ptit_edu_vn/EdHMfPt7tLZDqSHMDxHtS2sBupksm8g6dSnowILW2V6JQA?e=E0oE27"
+      }
+    },
+    "39": {
+      "_case": {
+        "attributes": [
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 0.9,
+                "id": 244,
+                "value": "Khớp"
+              },
+              {
+                "comparativeValue": 0.1,
+                "id": 245,
+                "value": "Cột sống"
+              }
+            ],
+            "id": 137,
+            "name": "Bộ phận đau",
+            "weight": 25
+          },
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 0.5,
+                "id": 246,
+                "value": "Viêm"
+              },
+              {
+                "comparativeValue": 0.5,
+                "id": 247,
+                "value": "Cứng vào buổi sáng"
+              }
+            ],
+            "id": 138,
+            "name": "Trạng thái khớp",
+            "weight": 27
+          },
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 1,
+                "id": 248,
+                "value": "Tổn thương khớp "
+              }
+            ],
+            "id": 139,
+            "name": "Xquang",
+            "weight": 56
+          },
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 1,
+                "id": 249,
+                "value": "Tốc độ lắng máu tăng"
+              }
+            ],
+            "id": 140,
+            "name": "Trạng thái máu",
+            "weight": 43
+          },
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 1,
+                "id": 250,
+                "value": "Có"
+              }
+            ],
+            "id": 141,
+            "name": "Sốt",
+            "weight": 8
+          },
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 1,
+                "id": 251,
+                "value": "Viêm"
+              }
+            ],
+            "id": 142,
+            "name": "Gân",
+            "weight": 32
+          },
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 1,
+                "id": 252,
+                "value": "Viêm mống mắt"
+              }
+            ],
+            "id": 143,
+            "name": "Mắt",
+            "weight": 37
+          },
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 1,
+                "id": 253,
+                "value": "Có"
+              }
+            ],
+            "id": 144,
+            "name": "Gầy sút",
+            "weight": 8
+          },
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 1,
+                "id": 254,
+                "value": "Có"
+              }
+            ],
+            "id": 145,
+            "name": "Mệt mỏi",
+            "weight": 7
+          },
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 1,
+                "id": 255,
+                "value": "6-15"
+              }
+            ],
+            "id": 146,
+            "name": "Độ tuổi",
+            "weight": 22
+          }
+        ],
+        "id": 41
+      },
+      "id": 39,
+      "name": "Bệnh viêm khớp thiếu niên tự phát thể viêm cột sống dính khớp",
+      "treatment": {
+        "id": 39,
+        "method": "https://ptiteduvn-my.sharepoint.com/:w:/g/personal/anhdh_b18cn010_stu_ptit_edu_vn/EbPMjOve_1RBi4dTR4M_7D8BoedhUOhI6in4auMMgim9cA?e=OhMcRF"
+      }
+    },
+    "40": {
+      "_case": {
+        "attributes": [
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 0.2,
+                "id": 256,
+                "value": "Khớp cổ tay "
+              },
+              {
+                "comparativeValue": 0.2,
+                "id": 257,
+                "value": "Khớp cổ chân "
+              },
+              {
+                "comparativeValue": 0.05,
+                "id": 258,
+                "value": "Bàn tay"
+              },
+              {
+                "comparativeValue": 0.05,
+                "id": 259,
+                "value": "Háng"
+              },
+              {
+                "comparativeValue": 0.2,
+                "id": 260,
+                "value": "Khớp gối"
+              },
+              {
+                "comparativeValue": 0.05,
+                "id": 261,
+                "value": "Khớp thái dương"
+              },
+              {
+                "comparativeValue": 0.2,
+                "id": 262,
+                "value": "Bụng"
+              },
+              {
+                "comparativeValue": 0.05,
+                "id": 263,
+                "value": "Cột sống"
+              }
+            ],
+            "id": 147,
+            "name": "Bộ phận đau",
+            "weight": 20
+          },
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 1,
+                "id": 264,
+                "value": "Số lượng bạch cầu tăng "
+              }
+            ],
+            "id": 148,
+            "name": "Trạng thái máu",
+            "weight": 40
+          },
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 1,
+                "id": 265,
+                "value": "Có"
+              }
+            ],
+            "id": 149,
+            "name": "Sốt",
+            "weight": 8
+          },
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 1,
+                "id": 266,
+                "value": "Phát ban"
+              }
+            ],
+            "id": 150,
+            "name": "Ngoài da",
+            "weight": 27
+          },
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 1,
+                "id": 267,
+                "value": "Tràn dịch"
+              }
+            ],
+            "id": 151,
+            "name": "Phổi",
+            "weight": 58
+          },
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 1,
+                "id": 268,
+                "value": "6-15"
+              }
+            ],
+            "id": 152,
+            "name": "Độ tuổi",
+            "weight": 22
+          }
+        ],
+        "id": 42
+      },
+      "id": 40,
+      "name": "Bệnh viêm khớp thiếu niên tự phát thể hệ thống",
+      "treatment": {
+        "id": 40,
+        "method": "https://ptiteduvn-my.sharepoint.com/:w:/g/personal/anhdh_b18cn010_stu_ptit_edu_vn/EQsZh5PqjihJh5fhoHYK6WMBkPaHP_5-kPhgUd6PPpq6gQ?e=XimThl"
+      }
+    },
+    "41": {
+      "_case": {
+        "attributes": [
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 1,
+                "id": 269,
+                "value": "Cột sống"
+              }
+            ],
+            "id": 153,
+            "name": "Bộ phận đau",
+            "weight": 28
+          },
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 1,
+                "id": 270,
+                "value": "Viêm"
+              }
+            ],
+            "id": 154,
+            "name": "Trạng thái khớp ",
+            "weight": 36
+          },
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 0.25,
+                "id": 271,
+                "value": "Khuyết xương"
+              },
+              {
+                "comparativeValue": 0.25,
+                "id": 272,
+                "value": "Bào mòn xương"
+              },
+              {
+                "comparativeValue": 0.25,
+                "id": 273,
+                "value": "Tiêu xương"
+              },
+              {
+                "comparativeValue": 0.25,
+                "id": 274,
+                "value": "Hình ảnh viêm dính khớp cùng chậu"
+              }
+            ],
+            "id": 155,
+            "name": "Xquang",
+            "weight": 42
+          },
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 1,
+                "id": 275,
+                "value": "Viêm màng mạch nho "
+              }
+            ],
+            "id": 156,
+            "name": "Mắt",
+            "weight": 47
+          },
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 0.5,
+                "id": 276,
+                "value": "Viêm đỏ"
+              },
+              {
+                "comparativeValue": 0.5,
+                "id": 277,
+                "value": "Vẩy màu trắng đục"
+              }
+            ],
+            "id": 157,
+            "name": "Ngoài da",
+            "weight": 88
+          },
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 1,
+                "id": 278,
+                "value": "9-12"
+              }
+            ],
+            "id": 158,
+            "name": "Độ tuổi",
+            "weight": 30
+          }
+        ],
+        "id": 43
+      },
+      "id": 41,
+      "name": "Bệnh viêm khớp thiếu niên tự phát thể viêm khớp vảy nến",
+      "treatment": {
+        "id": 41,
+        "method": "https://ptiteduvn-my.sharepoint.com/:w:/g/personal/anhdh_b18cn010_stu_ptit_edu_vn/EW9ZcfWsH5tHnd2Rlx2JfxwB6QcJNh_RWiSEtAY1vXUI_w?e=WQn3Uq"
+      }
+    },
+    "42": {
+      "_case": {
+        "attributes": [
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 0.33,
+                "id": 279,
+                "value": "Mông"
+              },
+              {
+                "comparativeValue": 0.33,
+                "id": 280,
+                "value": "Thắt lưng"
+              },
+              {
+                "comparativeValue": 0.33,
+                "id": 281,
+                "value": "Khớp háng"
+              }
+            ],
+            "id": 159,
+            "name": "Bộ phận đau",
+            "weight": 57
+          },
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 1,
+                "id": 282,
+                "value": "Viêm"
+              }
+            ],
+            "id": 160,
+            "name": "Trạng thái khớp",
+            "weight": 34
+          },
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 1,
+                "id": 283,
+                "value": "Viêm khớp cùng chậu"
+              }
+            ],
+            "id": 161,
+            "name": "Xquang",
+            "weight": 60
+          },
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 0.5,
+                "id": 284,
+                "value": "Tốc độ lắng máu tăng"
+              },
+              {
+                "comparativeValue": 0.5,
+                "id": 285,
+                "value": "CRP tăng"
+              }
+            ],
+            "id": 162,
+            "name": "Trạng thái máu",
+            "weight": 42
+          },
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 1,
+                "id": 286,
+                "value": "Viêm điểm bám gân"
+              }
+            ],
+            "id": 163,
+            "name": "Gân",
+            "weight": 55
+          },
+          {
+            "attributeValues": [
+              {
+                "comparativeValue": 1,
+                "id": 287,
+                "value": "Viêm kết mạc"
+              }
+            ],
+            "id": 164,
+            "name": "Mắt",
+            "weight": 26
+          }
+        ],
+        "id": 44
+      },
+      "degrees": [
+        {
+          "id": 29,
+          "name": "Giai đoạn sớm"
+        },
+        {
+          "id": 30,
+          "name": "Giai đoạn 1",
+          "symptoms": [
+            {
+              "id": 25,
+              "name": "Xquang",
+              "symptomValues": [
+                {
+                  "id": 29,
+                  "value": "Mất chất khoáng của bờ khớp "
+                },
+                {
+                  "id": 30,
+                  "value": "Khe khớp cùng chậu rộng  "
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 31,
+          "name": "Giai đoạn 2",
+          "symptoms": [
+            {
+              "id": 26,
+              "name": "Xquang",
+              "symptomValues": [
+                {
+                  "id": 31,
+                  "value": "Hình ảnh bào mòn"
+                },
+                {
+                  "id": 32,
+                  "value": "Hình ảnh tem thư ở rìa khớp"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 32,
+          "name": "Giai đoạn 3",
+          "symptoms": [
+            {
+              "id": 27,
+              "name": "Xquang",
+              "symptomValues": [
+                {
+                  "id": 33,
+                  "value": "Đặc xương ở bờ khớp"
+                },
+                {
+                  "id": 34,
+                  "value": "Dính một phần khớp cùng - chậu"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 33,
+          "name": "Giai đoạn 4",
+          "symptoms": [
+            {
+              "id": 28,
+              "name": "Xquang",
+              "symptomValues": [
+                {
+                  "id": 35,
+                  "value": "Dính khớp chậu hoàn toàn"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 34,
+          "name": "Giai đoạn muộn",
+          "symptoms": [
+            {
+              "id": 29,
+              "name": "Xquang",
+              "symptomValues": [
+                {
+                  "id": 36,
+                  "value": "Hình ảnh tổn thương cột sống"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "id": 42,
+      "name": "Bệnh viêm cột sống dính khớp",
+      "treatment": {
+        "id": 42,
+        "method": "https://ptiteduvn-my.sharepoint.com/:w:/g/personal/anhdh_b18cn010_stu_ptit_edu_vn/EYG7nDC8QwFEiAbbit0jLpoBdn5vcxHJlkhskwiAirjlKQ?e=JqRcol"
+      }
+    }
+  }
+}

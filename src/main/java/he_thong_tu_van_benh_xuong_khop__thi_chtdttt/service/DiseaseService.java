@@ -40,7 +40,7 @@ public class DiseaseService {
     }
 
     public void deleteByID(int ID) {
-        diseaseRepository.remove(ID);
+//        diseaseRepository.remove(ID);
     }
 
     public ImmutablePair<Double, List<Disease>> caseBaseReasoning(Case caseInput) {
