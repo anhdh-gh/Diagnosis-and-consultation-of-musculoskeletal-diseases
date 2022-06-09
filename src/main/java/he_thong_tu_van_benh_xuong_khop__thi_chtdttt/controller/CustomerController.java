@@ -5,7 +5,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import he_thong_tu_van_benh_xuong_khop__thi_chtdttt.dto.AttributeDTO;
 import he_thong_tu_van_benh_xuong_khop__thi_chtdttt.entity.*;
 import he_thong_tu_van_benh_xuong_khop__thi_chtdttt.service.DiseaseService;
-import javafx.util.Pair;
+import org.apache.commons.lang3.tuple.ImmutablePair;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -43,7 +43,7 @@ public class CustomerController {
     @PostMapping
     public String processDiagnose(@RequestParam MultiValueMap<String, String> allRequestParams, Model model, HttpServletRequest request) {
         // Kiểm tra session có lưu bệnh k
-        Pair<Double, List<Disease>> diseasesResult = ( Pair<Double, List<Disease>>) request.getSession().getAttribute("diseasesResult");
+        ImmutablePair<Double, List<Disease>> diseasesResult = ( ImmutablePair<Double, List<Disease>>) request.getSession().getAttribute("diseasesResult");
 
         // Chưa chẩn đoán
         if(diseasesResult == null) {
@@ -69,7 +69,7 @@ public class CustomerController {
             });
 
             // Thực hiện so sánh và chuẩn đoán bệnh
-            Pair<Double, List<Disease>> diseases = diseaseService.caseBaseReasoning(caseInput);
+            ImmutablePair<Double, List<Disease>> diseases = diseaseService.caseBaseReasoning(caseInput);
 
             // Lọc ra các triệu chứng của mức độ
             List<AttributeDTO> attributeDTOs = new ArrayList<>();
@@ -115,7 +115,7 @@ public class CustomerController {
         // Đã chẩn doán
         else {
             Case caseInput = (Case) request.getSession().getAttribute("caseInput");
-            Pair<Double, List<Disease>> diseases =  diseasesResult;
+            ImmutablePair<Double, List<Disease>> diseases =  diseasesResult;
 
             // Xóa session
             request.getSession().removeAttribute("diseasesResult");

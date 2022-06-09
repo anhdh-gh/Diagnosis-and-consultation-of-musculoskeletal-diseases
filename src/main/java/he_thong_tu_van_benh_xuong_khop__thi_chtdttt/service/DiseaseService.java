@@ -7,7 +7,7 @@ import he_thong_tu_van_benh_xuong_khop__thi_chtdttt.entity.Case;
 import he_thong_tu_van_benh_xuong_khop__thi_chtdttt.entity.Disease;
 import he_thong_tu_van_benh_xuong_khop__thi_chtdttt.repository.DiseaseRepository;
 import he_thong_tu_van_benh_xuong_khop__thi_chtdttt.utils.VNCharacterUtils;
-import javafx.util.Pair;
+import org.apache.commons.lang3.tuple.ImmutablePair;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -43,7 +43,7 @@ public class DiseaseService {
         diseaseRepository.deleteById(ID);
     }
 
-    public Pair<Double, List<Disease>> caseBaseReasoning(Case caseInput) {
+    public ImmutablePair<Double, List<Disease>> caseBaseReasoning(Case caseInput) {
         // Lấy tất cả các case trong hệ thống
         List<Disease> allDiseases = diseaseRepository.findAll();
         allDiseases = allDiseases != null ? allDiseases : new ArrayList<>();
@@ -125,7 +125,7 @@ public class DiseaseService {
         }
 
         System.out.println("============================================================= End =============================================================\n\n");
-        return new Pair<>(max, sortAttributeSameCaseInput(diseasesResult, caseInput));
+        return new ImmutablePair<>(max, sortAttributeSameCaseInput(diseasesResult, caseInput));
     }
 
     private List<Disease> sortAttributeSameCaseInput(List<Disease> diseasesResult, Case caseInput) {
