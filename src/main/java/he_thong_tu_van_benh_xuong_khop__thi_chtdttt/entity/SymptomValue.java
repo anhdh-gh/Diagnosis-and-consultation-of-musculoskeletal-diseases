@@ -5,13 +5,16 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
 @Entity
 @Table(name = "symptomvalue")
-public class SymptomValue {
+public class SymptomValue implements Serializable {
+
+    private static final long serialVersionUID = 8L;
 
     @Id
     @Column(name = "ID")

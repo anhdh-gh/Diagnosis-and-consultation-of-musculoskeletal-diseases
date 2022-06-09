@@ -5,6 +5,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.List;
 
 @NoArgsConstructor
@@ -12,7 +13,9 @@ import java.util.List;
 @Data
 @Entity
 @Table(name = "attribute")
-public class Attribute {
+public class Attribute implements Serializable {
+
+    private static final long serialVersionUID = 2L;
 
     @Id
     @Column(name = "ID")

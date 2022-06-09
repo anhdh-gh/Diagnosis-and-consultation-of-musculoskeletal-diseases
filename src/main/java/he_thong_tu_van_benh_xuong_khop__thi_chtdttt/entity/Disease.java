@@ -5,6 +5,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.List;
 
 @NoArgsConstructor
@@ -12,7 +13,9 @@ import java.util.List;
 @Data
 @Entity
 @Table(name = "disease")
-public class Disease {
+public class Disease implements Serializable {
+
+    private static final long serialVersionUID = 6L;
 
     @Id
     @Column(name = "ID")
@@ -30,7 +33,7 @@ public class Disease {
     @JoinColumn(name = "TreatmentID")
     private Treatment treatment;
 
-    @OneToMany(targetEntity = Degree.class, cascade = CascadeType.ALL)
+    @OneToMany(fetch = FetchType.EAGER, targetEntity = Degree.class, cascade = CascadeType.ALL)
     @JoinColumn(name = "DiseaseID", nullable = false)
     private List<Degree> degrees;
 

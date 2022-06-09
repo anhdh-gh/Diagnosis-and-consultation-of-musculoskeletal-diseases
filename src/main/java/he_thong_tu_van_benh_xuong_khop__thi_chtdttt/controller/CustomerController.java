@@ -5,6 +5,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import he_thong_tu_van_benh_xuong_khop__thi_chtdttt.dto.AttributeDTO;
 import he_thong_tu_van_benh_xuong_khop__thi_chtdttt.entity.*;
 import he_thong_tu_van_benh_xuong_khop__thi_chtdttt.service.DiseaseService;
+import he_thong_tu_van_benh_xuong_khop__thi_chtdttt.utils.FileUtils;
 import org.apache.commons.lang3.tuple.ImmutablePair;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -26,11 +27,13 @@ public class CustomerController {
 
     private DiseaseService diseaseService;
     private ObjectMapper objectMapper;
+    private String resourcePath;
 
     @Autowired
-    public CustomerController(DiseaseService diseaseService) {
+    public CustomerController(DiseaseService diseaseService, String resourcePath) {
         this.diseaseService = diseaseService;
         this.objectMapper = new ObjectMapper();
+        this.resourcePath = resourcePath;
     }
 
     @GetMapping
