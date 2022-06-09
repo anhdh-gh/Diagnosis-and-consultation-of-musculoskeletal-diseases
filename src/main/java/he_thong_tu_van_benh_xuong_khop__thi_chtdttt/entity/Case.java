@@ -4,12 +4,15 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.io.Serializable;
 import java.util.List;
 
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
-public class Case {
+public class Case implements Serializable {
+
+    private static final long serialVersionUID = 4L;
 
     private int ID;
     private List<Attribute> attributes;

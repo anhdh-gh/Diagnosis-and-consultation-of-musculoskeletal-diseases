@@ -4,11 +4,15 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.io.Serializable;
+
 
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
-public class Treatment {
+public class Treatment implements Serializable {
+
+    private static final long serialVersionUID = 9L;
 
     private int ID;
     private String method;

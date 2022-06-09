@@ -4,12 +4,15 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.io.Serializable;
 import java.util.List;
 
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
-public class Attribute {
+public class Attribute implements Serializable {
+
+    private static final long serialVersionUID = 2L;
 
     private int ID;
     private String name;
