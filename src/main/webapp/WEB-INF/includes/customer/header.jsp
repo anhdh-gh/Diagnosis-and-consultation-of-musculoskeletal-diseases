@@ -35,7 +35,7 @@
             
             <div class="col-lg-2">
                 <div class="header__logo">
-                    <a href="<c:url value='${request.contextPath}/customer'/>" class="d-flex justify-content-center">
+                    <a href="<c:url value='${request.contextPath}/customer'/>" class="d-lg-flex d-none justify-content-center">
                         <img style="width: 50%" src="<c:url value='${request.contextPath}/img/customer/logo.png'/>" alt="">
                     </a>
                     <h6 class="mt-1 text-center">SỐNG KHỎE</h6>
@@ -43,17 +43,17 @@
             </div>
             
             <div class="col-lg-7 d-flex justify-content-center">
-                <nav class="header__menu d-flex align-items-center">
-                    <ul>
-                        <li id="home-page"><a href="<c:url value='${request.contextPath}/customer'/>">Home</a></li>
-                        <li id="contact-page"><a href="<c:url value='${request.contextPath}/customer/contact'/>">Contact</a></li>
-                        <li id="manual-page"><a href="<c:url value='${request.contextPath}/customer/manual'/>">Manual</a></li>
-                        <li><a href="<c:url value='${request.contextPath}/manager'/>">Manager</a></li>
+                <nav class="header__menu d-flex align-items-center flex-grow-1">
+                    <ul class="d-flex flex-wrap justify-content-around flex-grow-1">
+                        <li id="home-page" class="m-0"><a href="<c:url value='${request.contextPath}/customer'/>">Home</a></li>
+                        <li id="contact-page" class="m-0"><a href="<c:url value='${request.contextPath}/customer/contact'/>">Contact</a></li>
+                        <li id="manual-page" class="m-0"><a href="<c:url value='${request.contextPath}/customer/manual'/>">Manual</a></li>
+                        <li class="m-0"><a href="<c:url value='${request.contextPath}/manager'/>">Manager</a></li>
                     </ul>
                 </nav>
             </div>
 
-            <div class="col-lg-3 d-flex align-items-center justify-content-center">
+            <div class="col-lg-3 d-lg-flex d-none align-items-center justify-content-center">
                 <div class="hero__search__phone">
                     <div class="hero__search__phone__icon">
                         <i class="fa fa-phone"></i>
@@ -63,10 +63,6 @@
                         <span>Hỗ trợ 24/7</span>
                     </div>
                 </div>
-            </div>
-
-            <div class="humberger__open">
-                <i class="fa fa-bars"></i>
             </div>
         </div>
     </div>
