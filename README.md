@@ -3,6 +3,7 @@
 
 ## Công nghệ sử dụng:
 - Spring boot
+- JSP
 - Spring Data JPA
 - MySQL
 - File-IO
