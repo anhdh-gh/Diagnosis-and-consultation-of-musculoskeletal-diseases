@@ -13,6 +13,7 @@
 - CSS
 - JS
 - Heroku
+- Jquery
 
 ## Thuật toán sử dụng:
 - Case-based reasoning (CBR)
