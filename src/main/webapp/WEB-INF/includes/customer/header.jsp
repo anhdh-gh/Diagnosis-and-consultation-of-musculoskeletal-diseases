@@ -19,9 +19,9 @@
                 <div class="col-lg-6 col-md-6">
                     <div class="header__top__right">
                         <div class="header__top__right__social">
-                            <a target="_blank" href="https://www.facebook.com/DoHungAnh27092000"><i class="fa-brands fa-facebook-f text-primary"></i></a>
+                            <a target="_blank" href="https://www.facebook.com/anhdh.fb"><i class="fa-brands fa-facebook-f text-primary"></i></a>
                             <a target="_blank" href="mailto:dohunganh27092000@gmail.com"><i class="far fa-envelope text-danger"></i></a>
-                            <a target="_blank" href="https://github.com/DoHungAnh-27-09-2000"><i class="fab fa-github text-dark"></i></a>
+                            <a target="_blank" href="https://github.com/anhdh-gh"><i class="fab fa-github text-dark"></i></a>
                             <a target="_blank" href="https://www.youtube.com/channel/UCuZUp0A9aLrfHSPr3eg05Ow"><i class="fab fa-youtube text-danger"></i></a>
                         </div>
                     </div>

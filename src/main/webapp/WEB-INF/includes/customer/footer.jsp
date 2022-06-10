@@ -8,9 +8,9 @@
             <div class="col-lg-12">
                 <div class="footer__widget">                    
                     <div class="footer__widget__social">
-                        <a target="_blank" href="https://www.facebook.com/DoHungAnh27092000"><i class="fa-brands fa-facebook-f text-primary"></i></a>
+                        <a target="_blank" href="https://www.facebook.com/anhdh.fb"><i class="fa-brands fa-facebook-f text-primary"></i></a>
                         <a target="_blank" href="mailto:dohunganh27092000@gmail.com"><i class="far fa-envelope text-danger"></i></a>
-                        <a target="_blank" href="https://github.com/DoHungAnh-27-09-2000"><i class="fab fa-github text-dark"></i></a>
+                        <a target="_blank" href="https://github.com/anhdh-gh"><i class="fab fa-github text-dark"></i></a>
                         <a target="_blank" href="https://www.youtube.com/channel/UCuZUp0A9aLrfHSPr3eg05Ow"><i class="fab fa-youtube text-danger"></i></a>
                     </div>
                 </div>
@@ -24,7 +24,7 @@
                         <p>
                             Copyright &copy;
                             <script>document.write(new Date().getFullYear());</script> All rights reserved | Design by <i class="fa fa-heart text-danger" aria-hidden="true"></i> by <a
-                                href="https://www.facebook.com/DoHungAnh27092000" target="_blank" class="text-primary">Đỗ Hùng Anh</a>
+                                href="https://www.facebook.com/anhdh.fb" target="_blank" class="text-primary">Đỗ Hùng Anh</a>
                         </p>
                     </div>
                 </div>
