@@ -75,25 +75,25 @@ public class CustomerController {
 
             // Lặp các triệu chứng của các mức dộ bệnh, để lọc ra các triệu chứng cho người dùng chọn
             diseases.getValue().forEach(disease -> {
-                System.out.println(disease);
                 disease.getDegrees().forEach(degree -> {
-                    System.out.println(degree);
-                    degree.getSymptoms().forEach(symptom -> {
+                    try {
+                        degree.getSymptoms().forEach(symptom -> {
 
-                        // Tìm trong list có triệu chứng nào là symptom.getName() không
-                        AttributeDTO attributeDTO = attributeDTOs.stream().filter(attributeDTOi -> attributeDTOi.getName().trim().equalsIgnoreCase(symptom.getName().trim())).findFirst().orElse(null);
+                            // Tìm trong list có triệu chứng nào là symptom.getName() không
+                            AttributeDTO attributeDTO = attributeDTOs.stream().filter(attributeDTOi -> attributeDTOi.getName().trim().equalsIgnoreCase(symptom.getName().trim())).findFirst().orElse(null);
 
-                        // Nếu có
-                        if(attributeDTO != null)
-                            symptom.getSymptomValues().stream().forEach(symptomValue -> {
-                                if(attributeDTO.getValues().stream().allMatch(value -> !value.trim().equalsIgnoreCase(symptomValue.getValue().trim())))
-                                    attributeDTO.getValues().add(symptomValue.getValue());
-                            });
+                            // Nếu có
+                            if (attributeDTO != null)
+                                symptom.getSymptomValues().stream().forEach(symptomValue -> {
+                                    if (attributeDTO.getValues().stream().allMatch(value -> !value.trim().equalsIgnoreCase(symptomValue.getValue().trim())))
+                                        attributeDTO.getValues().add(symptomValue.getValue());
+                                });
 
-                            // Nếu không
-                        else
-                            attributeDTOs.add(new AttributeDTO(symptom.getName(), symptom.getSymptomValues().stream().map(symptomValue -> symptomValue.getValue()).collect(Collectors.toList())));
-                    });
+                                // Nếu không
+                            else
+                                attributeDTOs.add(new AttributeDTO(symptom.getName(), symptom.getSymptomValues().stream().map(symptomValue -> symptomValue.getValue()).collect(Collectors.toList())));
+                        });
+                    } catch (NullPointerException e) {}
                 });
             });
 
