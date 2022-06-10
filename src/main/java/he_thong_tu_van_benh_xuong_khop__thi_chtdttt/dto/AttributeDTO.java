@@ -5,6 +5,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Data
@@ -19,5 +20,13 @@ public class AttributeDTO {
     public AttributeDTO(String name, List<String> values) {
         this.name = name;
         this.values = values;
+    }
+
+    public List<String> getValues() {
+        return values == null ? new ArrayList<>() : values;
+    }
+
+    public List<Disease> getDiseases() {
+        return diseases == null ? new ArrayList<>() : diseases;
     }
 }

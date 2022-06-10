@@ -6,6 +6,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @NoArgsConstructor
@@ -28,5 +29,9 @@ public class Disease {
         this.treatment = treatment;
         this.degrees = degrees;
         this._case = _case;
+    }
+
+    public List<Degree> getDegrees() {
+        return degrees == null ? new ArrayList<>() : degrees;
     }
 }

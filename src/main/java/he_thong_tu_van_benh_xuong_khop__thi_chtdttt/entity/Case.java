@@ -4,6 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @NoArgsConstructor
@@ -16,5 +17,9 @@ public class Case {
 
     public Case(List<Attribute> attributes) {
         this.attributes = attributes;
+    }
+
+    public List<Attribute> getAttributes() {
+        return attributes == null ? new ArrayList<>() : attributes;
     }
 }

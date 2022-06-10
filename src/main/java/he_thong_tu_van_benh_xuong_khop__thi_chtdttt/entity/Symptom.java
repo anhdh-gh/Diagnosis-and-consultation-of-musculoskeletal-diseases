@@ -4,6 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @NoArgsConstructor
@@ -18,5 +19,9 @@ public class Symptom {
     public Symptom(String name, List<SymptomValue> symptomValues) {
         this.name = name;
         this.symptomValues = symptomValues;
+    }
+
+    public List<SymptomValue> getSymptomValues() {
+        return symptomValues == null ? new ArrayList<>() : symptomValues;
     }
 }

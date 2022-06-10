@@ -4,6 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @NoArgsConstructor
@@ -18,5 +19,9 @@ public class Degree {
     public Degree(String name, List<Symptom> symptoms) {
         this.name = name;
         this.symptoms = symptoms;
+    }
+
+    public List<Symptom> getSymptoms() {
+        return symptoms == null ? new ArrayList<>() : symptoms;
     }
 }

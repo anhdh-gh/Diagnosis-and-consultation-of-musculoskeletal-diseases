@@ -4,6 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @NoArgsConstructor
@@ -25,5 +26,9 @@ public class Attribute {
     public Attribute(String name, List<AttributeValue> attributeValues) {
         this.name = name;
         this.attributeValues = attributeValues;
+    }
+
+    public List<AttributeValue> getAttributeValues() {
+        return attributeValues == null ? new ArrayList<>() : attributeValues;
     }
 }
