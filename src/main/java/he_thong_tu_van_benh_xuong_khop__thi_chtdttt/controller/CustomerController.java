@@ -75,7 +75,9 @@ public class CustomerController {
 
             // Lặp các triệu chứng của các mức dộ bệnh, để lọc ra các triệu chứng cho người dùng chọn
             diseases.getValue().forEach(disease -> {
+                System.out.println(disease);
                 disease.getDegrees().forEach(degree -> {
+                    System.out.println(degree);
                     degree.getSymptoms().forEach(symptom -> {
 
                         // Tìm trong list có triệu chứng nào là symptom.getName() không
