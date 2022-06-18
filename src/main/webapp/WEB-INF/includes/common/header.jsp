@@ -13,3 +13,6 @@
 
 <!-- Loader -->
 <link rel="stylesheet" href="/css/common/loader.css"/>
+
+<%-- Google search --%>
+<meta name="google-site-verification" content="EnOWvNA1WN9Hb3CGWGIDRSFUXpkM_8N7TyG3wZ09Dik" />
