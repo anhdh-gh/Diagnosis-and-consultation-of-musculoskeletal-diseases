@@ -1,6 +1,4 @@
 ## Website chẩn đoán và tư vấn bệnh xương khớp
-- https://musculoskeletal-diseases.herokuapp.com
-
 ## Công nghệ sử dụng:
 - Spring boot
 - JSP
